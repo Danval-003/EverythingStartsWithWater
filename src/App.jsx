@@ -28,7 +28,7 @@ const App = () => {
           {' '}
           <code>src/App.jsx</code>
           {' '}
-          and save to test HMR
+          Hola mundo
         </p>
       </div>
       <p className="read-the-docs">
