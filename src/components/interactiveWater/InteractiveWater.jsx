@@ -1,22 +1,11 @@
 import React, { useEffect } from 'react'
 import './InteractiveWater.scss'
+import PropTypes from 'prop-types'
 
-const InteractiveWater = () => {
+const InteractiveWater = ({ percentaje }) => {
   const n = 12
-  const width = 1400
+  const width = 1800
   const height = 60
-
-  function normalize(val, min, max) {
-    return (val - min) / (max - min)
-  }
-
-  function interpolate(nrm, min, max) {
-    return min + (max - min) * nrm
-  }
-
-  function map(val, min1, max1, min2, max2) {
-    return interpolate(normalize(val, min1, max1), min2, max2)
-  }
 
   useEffect(() => {
     const c = document.getElementById('canvas1')
@@ -28,7 +17,7 @@ const InteractiveWater = () => {
       c.height = height
 
       const points = []
-      for (let i = 0; i <= n + 1; i++) {
+      for (let i = 0; i <= n + 1; i += 0.8) {
         const x = (width / n) * i + (-20 + Math.random() * 40)
         const y = 15 + Math.random() * 20
         points.push({
@@ -95,12 +84,6 @@ const InteractiveWater = () => {
         ctx.closePath()
         ctx.fillStyle = '#8ED6FF'
         ctx.fill()
-
-        // get height value from filler element
-        const h = document.getElementById('filler').offsetHeight
-        const waterHeight = map(h, 0, window.innerHeight * 0.9, -3.9, 3.9)
-        document.getElementById('wh').innerText = waterHeight.toFixed(1)
-
         window.requestAnimationFrame(tick)
       }
 
@@ -109,16 +92,19 @@ const InteractiveWater = () => {
   }, [])
 
   return (
-    <>
-      <div className="backdrop">
-        <canvas id="canvas1" />
-        <div id="filler" className="filler" />
-      </div>
-      <div className="content">
-        <p id="wh" />
-      </div>
-    </>
+    <div className="backdrop">
+      <canvas id="canvas1" />
+      <div id="filler" className="filler" style={{ flex: `0 0 ${percentaje * 90}vh` }} />
+    </div>
   )
+}
+
+InteractiveWater.propTypes = {
+  percentaje: PropTypes.number,
+}
+
+InteractiveWater.defaultProps = {
+  percentaje: 0,
 }
 
 export default InteractiveWater

@@ -9,7 +9,7 @@ const App = () => {
 
   return (
     <div>
-      <InteractiveWater>hola</InteractiveWater>
+      <InteractiveWater percentaje={index} />
       <Slider currentIndex={index}>
         <div style={{
           position: 'fixed',
@@ -21,9 +21,9 @@ const App = () => {
           height: '100vh',
         }}
         >
-          <CircularButton text="つ﹏⊂" onClick={() => setIndex(1)} />
+          <CircularButton text="W" onClick={() => setIndex(1)} />
         </div>
-        <RoundedButton text="😁" onClick={() => setIndex(0)} />
+        <RoundedButton text="😁" onClick={() => setIndex(0)} backgroundColor="rgb(220, 0, 0)" />
       </Slider>
     </div>
   )
