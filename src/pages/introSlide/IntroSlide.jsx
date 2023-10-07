@@ -1,6 +1,6 @@
 import { React, useState } from 'react'
-import { principal } from './IntroSlide.module.css'
 import PropTypes from 'prop-types'
+import { principal } from './IntroSlide.module.scss'
 
 const IntroSlide = ({ goNext }) => (
   <div className={principal}>
