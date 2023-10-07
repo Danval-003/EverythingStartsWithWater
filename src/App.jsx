@@ -2,9 +2,15 @@ import { useState, React } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '../public/vite.svg'
 import './App.css'
+import CircularButton from './components/CircularButton/CircularButton'
+import RoundedButton from './components/RoundedButton/RoundedButton'
 
 const App = () => {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+
+  const handleButtonClick = () => {
+    alert('¡Botón circular clickeado!');
+  };
 
   return (
     <>
@@ -23,12 +29,18 @@ const App = () => {
           {' '}
           {count}
         </button>
+        <div>
+          <CircularButton text="<" backgroundColor="#409CD0" onClick={handleButtonClick} />
+        </div>
+        <div>
+          <RoundedButton text="Next >" backgroundColor="#003F69" onClick={handleButtonClick} />
+        </div>
         <p>
           Edit
           {' '}
           <code>src/App.jsx</code>
           {' '}
-          and save to test HMR
+          Hola mundo
         </p>
       </div>
       <p className="read-the-docs">
