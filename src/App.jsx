@@ -1,10 +1,8 @@
 import { useState, React } from 'react'
-import Slider from './components/slider/Slider'
-import InteractiveWater from './components/interactiveWater/InteractiveWater'
+import {
+  InteractiveWater, Slider, CircularButton, RoundedButton,
+} from './components'
 import './App.css'
-// import InteractiveWater from './components/interactiveWater/InteractiveWater'
-import CircularButton from './components/CircularButton/CircularButton'
-import RoundedButton from './components/RoundedButton/RoundedButton'
 
 const App = () => {
   const [index, setIndex] = useState(0)

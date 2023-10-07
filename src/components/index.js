@@ -1,7 +1,11 @@
-import InteractiveWater from './interactiveWater/InteractiveWater'
-import Slider from './slider/Slider'
+import InteractiveWater from './interactiveWater'
+import Slider from './slider'
+import CircularButton from './CircularButton'
+import RoundedButton from './RoundedButton'
 
-export default {
+export {
   InteractiveWater,
   Slider,
+  CircularButton,
+  RoundedButton,
 }
