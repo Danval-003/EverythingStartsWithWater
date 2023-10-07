@@ -1,3 +1,7 @@
-import Slider from './slider'
+import InteractiveWater from './interactiveWater/InteractiveWater'
+import Slider from './slider/Slider'
 
-export { Slider }
+export default {
+  InteractiveWater,
+  Slider,
+}

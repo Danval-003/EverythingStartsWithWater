@@ -13,7 +13,6 @@
   .sliderContent {
     display: flex;
     transition: transform 0.5s ease; /* Animación de desplazamiento */
-    transform: translateX(-${(props) => props.currentIndex * 100}%); /* Desplazamiento */
   }
   
   /* Estilo de los componentes hijos */

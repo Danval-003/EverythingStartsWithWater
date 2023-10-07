@@ -1,15 +1,17 @@
 import { useState, React } from 'react'
-import { Slider } from './components'
+import Slider from './components/slider/Slider'
+import InteractiveWater from './components/interactiveWater/InteractiveWater'
 import './App.css'
+// import InteractiveWater from './components/interactiveWater/InteractiveWater'
 import CircularButton from './components/CircularButton/CircularButton'
 import RoundedButton from './components/RoundedButton/RoundedButton'
 
 const App = () => {
   const [index, setIndex] = useState(0)
 
-
   return (
     <div>
+      <InteractiveWater>hola</InteractiveWater>
       <Slider currentIndex={index}>
         <div style={{
           position: 'fixed',
@@ -21,13 +23,9 @@ const App = () => {
           height: '100vh',
         }}
         >
-          <button type="button" onClick={() => setIndex(1)}>
-            Hola mundo
-          </button>
+          <CircularButton text="つ﹏⊂" onClick={() => setIndex(1)} />
         </div>
-        <button type="button" onClick={() => setIndex(0)}>
-          Adios Mundo
-        </button>
+        <RoundedButton text="😁" onClick={() => setIndex(0)} />
       </Slider>
     </div>
   )
