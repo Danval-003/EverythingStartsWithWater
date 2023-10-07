@@ -2,6 +2,8 @@ import { useState, React } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '../public/vite.svg'
 import './App.css'
+import InteractiveWater from './components/interactiveWater/InteractiveWater'
+// import InteractiveWater from './components/interactiveWater/InteractiveWater'
 
 const App = () => {
   const [count, setCount] = useState(0)
@@ -16,6 +18,7 @@ const App = () => {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
+      <InteractiveWater>hola</InteractiveWater>
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((c) => c + 1)} type="button">
@@ -31,6 +34,7 @@ const App = () => {
           and save to test HMR
         </p>
       </div>
+
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
