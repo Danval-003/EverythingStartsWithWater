@@ -19,16 +19,21 @@ const Button = styled.button`
     }
 `
 
-const RoundedButton = ({ text, backgroundColor, onClick }) => (
+const CircularButton = ({ text, backgroundColor, onClick }) => (
   <Button backgroundColor={backgroundColor} onClick={onClick}>
     {text}
   </Button>
 )
 
-RoundedButton.propTypes = {
+CircularButton.propTypes = {
   text: PropTypes.string.isRequired,
   backgroundColor: PropTypes.string,
   onClick: PropTypes.func,
 }
 
-export default RoundedButton
+CircularButton.defaultProps = {
+  backgroundColor: 'aqua',
+  onClick: null,
+}
+
+export default CircularButton
