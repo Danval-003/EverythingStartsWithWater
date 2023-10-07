@@ -16,5 +16,17 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    semi: ['error', 'never'],
+    'max-len': [
+      'warn',
+      {
+        code: 120,
+        tabWidth: 2,
+      },
+    ],
+    'react/function-component-definition': [
+      2,
+      { namedComponents: 'arrow-function' },
+    ],
   },
 }
