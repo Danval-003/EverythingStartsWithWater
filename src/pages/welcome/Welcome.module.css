@@ -5,7 +5,6 @@
     src: url('../../fonts/RAINYDAYS.ttf') format('truetype'); /* Ruta a la fuente TTF */
     /* Otros estilos, como font-weight y font-style si es necesario */
 }
-  
 
 .container {
     display: flex;
