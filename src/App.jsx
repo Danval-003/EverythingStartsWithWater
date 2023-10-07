@@ -1,6 +1,6 @@
 import { useState, React } from 'react'
 import {
-  InteractiveWater, Slider, CircularButton,
+InteractiveWater, Slider, CircularButton,
 } from './components'
 import './App.css'
 import Welcome from './pages/welcome/Welcome'
