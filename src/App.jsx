@@ -33,7 +33,7 @@ const App = () => {
           <CircularButton text="<" backgroundColor="#409CD0" onClick={handleButtonClick} />
         </div>
         <div>
-          <RoundedButton text="Next >" backgroundColor="#003F69" onClick={handleButtonClick} />
+          <RoundedButton text="Hola mundo" backgroundColor="#003F69" onClick={handleButtonClick} />
         </div>
         <p>
           Edit
