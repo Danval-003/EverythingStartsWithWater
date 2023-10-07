@@ -4,15 +4,13 @@ import styled from 'styled-components';
 
 const Button = styled.button`
     background-color: ${props => props.backgroundColor || '#409CD0'};
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 10px;
+    padding: 10px 20px; 
+    border: none;
     cursor: pointer;
-    color: white; /* Cambia el color del texto según tus preferencias */
-    text-decoration: none;
+    color: white;
+    font-size: 16px; 
+    transition: background-color 0.3s ease;
 
     &:hover {
         background-color: #00BCB6;
