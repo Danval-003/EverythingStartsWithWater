@@ -10,6 +10,7 @@ const Button = styled.button`
     cursor: pointer;
     color: white;
     font-size: 16px; 
+    font-family: 'PPFragment';
     transition: background-color 0.3s ease;
 
     &:hover {
@@ -18,7 +19,7 @@ const Button = styled.button`
 `
 
 const RoundedButton = ({ text, backgroundColor, onClick }) => (
-  <Button backgroundColor={backgroundColor} onClick={onClick}>
+  <Button backgroundColor={backgroundColor} style={{ fontFamily: 'Sans Regular' }} onClick={onClick}>
     {text}
   </Button>
 )
