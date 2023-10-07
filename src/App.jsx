@@ -1,8 +1,9 @@
 import { useState, React } from 'react'
 import {
-  InteractiveWater, Slider, CircularButton, RoundedButton,
+InteractiveWater, Slider, CircularButton,
 } from './components'
 import './App.css'
+import Welcome from './pages/welcome/Welcome'
 
 const App = () => {
   const [index, setIndex] = useState(0)
@@ -23,7 +24,7 @@ const App = () => {
         >
           <CircularButton text="W" onClick={() => setIndex(1)} />
         </div>
-        <RoundedButton text="😁" onClick={() => setIndex(0)} backgroundColor="rgb(220, 0, 0)" />
+        <Welcome setIndex={setIndex} index={0} />
       </Slider>
     </div>
   )

@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'PPFragment';
+  src: url('/fonts/PPFragment-GlareLight.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SansRegular';
+  src: url('/fonts/PPFragment-SansRegular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
