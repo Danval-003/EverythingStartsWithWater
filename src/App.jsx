@@ -1,9 +1,12 @@
 import { useState, React } from 'react'
 import { Slider } from './components'
 import './App.css'
+import CircularButton from './components/CircularButton/CircularButton'
+import RoundedButton from './components/RoundedButton/RoundedButton'
 
 const App = () => {
   const [index, setIndex] = useState(0)
+
 
   return (
     <div>
