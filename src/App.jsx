@@ -3,14 +3,17 @@ import {
   InteractiveWater, Slider, CircularButton, RoundedButton,
 } from './components'
 import './App.css'
-import { IntroSlide } from './pages'
+import {
+  IntroSlide, IntroductionSlide,
+} from './pages'
 
 const App = () => {
   const [index, setIndex] = useState(0)
+  const [percentage, setPercentage] = useState(0.0)
 
   return (
     <div>
-      <InteractiveWater percentaje={index / 2} />
+      <InteractiveWater percentaje={percentage} />
       <Slider currentIndex={index}>
         <div style={{
           position: 'fixed',
@@ -22,10 +25,11 @@ const App = () => {
           height: '100vh',
         }}
         >
-          <CircularButton text="W" onClick={() => setIndex(1)} />
+          <CircularButton text="W" onClick={() => { setIndex(1); setPercentage(1) }} />
         </div>
-        <RoundedButton text="😁" onClick={() => setIndex(2)} backgroundColor="rgb(220, 0, 0)" />
-        <IntroSlide goNext={() => setIndex(0)} />
+        <RoundedButton text="😁" onClick={() => { setIndex(2); setPercentage(0.90) }} backgroundColor="rgb(220, 0, 0)" />
+        <IntroSlide goNext={() => { setIndex(3); setPercentage(0.80) }} />
+        <IntroductionSlide goNext={() => { setIndex(0); setPercentage(0.70) }} />
       </Slider>
     </div>
   )
