@@ -82,7 +82,7 @@ const InteractiveWater = ({ percentaje }) => {
         ctx.lineTo(-50, points[0].y)
 
         ctx.closePath()
-        ctx.fillStyle = '#8ED6FF'
+        ctx.fillStyle = '#3fabea'
         ctx.fill()
         window.requestAnimationFrame(tick)
       }

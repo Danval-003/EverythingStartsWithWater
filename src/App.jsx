@@ -3,6 +3,7 @@ import {
 InteractiveWater, Slider, CircularButton,
 } from './components'
 import './App.css'
+import { IntroSlide } from './pages'
 import Welcome from './pages/welcome/Welcome'
 
 const App = () => {
@@ -10,7 +11,7 @@ const App = () => {
 
   return (
     <div>
-      <InteractiveWater percentaje={index} />
+      <InteractiveWater percentaje={index / 2} />
       <Slider currentIndex={index}>
         <div style={{
           position: 'fixed',
@@ -24,7 +25,8 @@ const App = () => {
         >
           <CircularButton text="W" onClick={() => setIndex(1)} />
         </div>
-        <Welcome setIndex={setIndex} index={0} />
+        <RoundedButton text="😁" onClick={() => setIndex(2)} backgroundColor="rgb(220, 0, 0)" />
+        <IntroSlide goNext={() => setIndex(0)} />
       </Slider>
     </div>
   )
