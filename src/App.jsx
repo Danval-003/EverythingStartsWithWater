@@ -45,15 +45,19 @@ const App = () => {
             texts={Languagues[indexLanguage].Slide1}
           />
           <IntroductionSlide
-            goNext={() => { setIndex(2); setPercentage(0.7) }}
+            goNext={() => { setIndex(2); setPercentage(0.8) }}
             texts={Languagues[indexLanguage].Slide2}
           />
+          <SweetWaterSlide
+            goNext={() => { setIndex(3); setPercentage(0.75) }}
+            texts={Languagues[indexLanguage].Slide3}
+          />
           <WorldSlide
-            goNext={() => { setIndex(3); setPercentage(0.5) }}
+            goNext={() => { setIndex(4); setPercentage(0.7) }}
             texts={Languagues[indexLanguage].WorldSlide}
           />
           <IntroductionSlide
-            goNext={() => { setIndex(4); setPercentage(0.7) }}
+            goNext={() => { setIndex(5); setPercentage(0.65) }}
             texts={Languagues[indexLanguage].Slide2}
           />
           <SweetWaterSlide
