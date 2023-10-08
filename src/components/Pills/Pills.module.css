@@ -21,6 +21,11 @@
   color: #fff; /* Cambia el color del texto cuando está activa */
 }
 
+.pill:not(.active):hover{
+  background-color: rgb(28, 150, 198);
+
+}
+
 /* Redondear el lado izquierdo del primer botón */
 .pill:first-child {
   border-top-left-radius: 0.5vw;
