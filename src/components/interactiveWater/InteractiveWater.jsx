@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import './InteractiveWater.scss'
 import PropTypes from 'prop-types'
+import arrow from '../../assets/arrow.png'
+import rule from '../../assets/ruleModified.png'
 
 const InteractiveWater = ({ percentaje }) => {
   const n = 12
@@ -93,6 +95,55 @@ const InteractiveWater = ({ percentaje }) => {
 
   return (
     <div className="backdrop">
+      <div className="water-meter">
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img src={rule} alt="Regla" className="rule-image" />
+        <img
+          src={arrow}
+          alt="Flecha"
+          className="arrow-image"
+          style={{ top: `${(1 - percentaje) * 92}vh` }}
+        />
+      </div>
       <canvas id="canvas1" />
       <div id="filler" className="filler" style={{ flex: `0 0 ${percentaje * 90}vh` }} />
     </div>
