@@ -2,7 +2,7 @@ import { React } from 'react'
 import PropTypes from 'prop-types'
 import { principal, secondary } from './IntroductionSlide.module.scss'
 import { StickerMaker } from '../../components'
-import cohete from '../../assets/cohete.png'
+import cohete from '../../assets/rocket.svg'
 
 const IntroductionSlide = ({ goNext }) => (
   <div className={principal}>
