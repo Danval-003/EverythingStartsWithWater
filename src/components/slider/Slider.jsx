@@ -1,19 +1,39 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import {
   principal, sliderContent,
 } from './Slider.module.css'
 
 const Slider = ({ children, currentIndex }) => {
-  const slideWidthRef = useRef(null) // Referencia al elemento del slide
+  const slideWidthRef = useRef(null)
+  const [slideWidth, setSlideWidth] = useState(0)
 
   useEffect(() => {
-    // Al actualizar el componente, obtén el ancho del elemento del slide
+    // Función para actualizar el ancho del slide
+    const updateSlideWidth = () => {
+      if (slideWidthRef.current) {
+        setSlideWidth(slideWidthRef.current.clientWidth)
+      }
+    }
+
+    // Actualiza el ancho del slide al cargar la página
+    updateSlideWidth()
+
+    // Actualiza el ancho del slide cuando cambie el tamaño de la ventana
+    window.addEventListener('resize', updateSlideWidth)
+
+    // Limpia el event listener cuando el componente se desmonta
+    return () => {
+      window.removeEventListener('resize', updateSlideWidth)
+    }
+  }, [])
+
+  useEffect(() => {
+    // Ajusta la posición del slider cuando cambie currentIndex
     if (slideWidthRef.current) {
-      const slideWidth = slideWidthRef.current.clientWidth
       slideWidthRef.current.style.transform = `translateX(-${currentIndex * slideWidth}px)`
     }
-  }, [currentIndex])
+  }, [currentIndex, slideWidth])
 
   return (
     <div className={principal}>
@@ -21,17 +41,18 @@ const Slider = ({ children, currentIndex }) => {
         <div
           className="slider-track"
           style={{
-            transition: 'transform 0.5s ease', // Animación de desplazamiento
+            transition: 'transform 0.5s ease',
             display: 'flex',
-            width: `${children.length * 100}vw`, // Tamaño total del slider
+            width: `${children.length * 100}vw`,
           }}
         >
-          {children.map((child) => (
+          {children.map((child, index) => (
             <div
-              className="slider-item"
+              className={`slider-item ${index === currentIndex ? 'active' : ''}`}
               style={{
-                width: '100vw', // Tamaño fijo de 100vw para cada componente hijo
+                width: `${slideWidth}px`,
               }}
+              key={index}
             >
               {child}
             </div>
@@ -43,7 +64,7 @@ const Slider = ({ children, currentIndex }) => {
 }
 
 Slider.propTypes = {
-  children: PropTypes.node.isRequired, // Se espera que "children" sea un nodo React
+  children: PropTypes.node.isRequired,
   currentIndex: PropTypes.number,
 }
 

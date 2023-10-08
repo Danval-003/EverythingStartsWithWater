@@ -1,68 +1,53 @@
-/* Slider principal que ocupa toda la pantalla */
+/* Estilos por defecto para pantallas grandes */
 .principal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-  /* Contenedor de contenido del slider con animación de desplazamiento */
-  .sliderContent {
-    display: flex;
-    transition: transform 0.5s ease; /* Animación de desplazamiento */
-  }
-  
-  /* Estilo de los componentes hijos */
-  .slider-item {
-    flex-shrink: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    background-color: white;
-    transition: opacity 0.5s ease; /* Transición de opacidad */
-    opacity: 0;
-  }
-  
-  /* Clase para mostrar un componente hijo activo */
-  .slider-item.active {
-    opacity: 1;
-  }
-  
-  /* Botones de navegación del slider */
-  .boton {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: aqua;
-    width: 5vw;
-    height: 2.5vw;
-    z-index: 2; /* Coloca los botones por encima del contenido */
-  }
-  
-  /* Estilo adicional para los botones del slider */
-  .sliderButton {
-    right: 10px;
-    /* Agrega cualquier otro estilo que desees para los botones */
-  }
-  /* CSS para el componente Slider-Item */
-
-/* CSS para el componente Slider-Item */
-.sliderItem {
-    flex: 0 0 100%; /* Cada componente ocupa el 100% del ancho */
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    background-color: white;
-    transition: opacity 0.5s ease; /* Transición de opacidad */
-    opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-  
+/* Contenedor de contenido del slider con animación de desplazamiento */
+.sliderContent {
+  display: flex;
+  transition: transform 0.5s ease; /* Animación de desplazamiento */
+}
+
+/* Estilo de los componentes hijos */
+.slider-item {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  background-color: white;
+  transition: opacity 0.5s ease; /* Transición de opacidad */
+  opacity: 0;
+}
+
+/* Clase para mostrar un componente hijo activo */
+.slider-item.active {
+  opacity: 1;
+}
+
+/* Botones de navegación del slider */
+.boton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: aqua;
+  width: 5vw;
+  height: 2.5vw;
+  z-index: 2; /* Coloca los botones por encima del contenido */
+}
+
+/* Estilo adicional para los botones del slider */
+.sliderButton {
+  right: 10px;
+  /* Agrega cualquier otro estilo que desees para los botones */
+}
+
