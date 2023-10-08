@@ -3,29 +3,21 @@ import {
   InteractiveWater, Slider, CircularButton, RoundedButton,
 } from './components'
 import './App.css'
-import { IntroSlide } from './pages'
+import {
+  IntroSlide, IntroductionSlide,
+} from './pages'
+import { Espanol } from '@text'
 
 const App = () => {
   const [index, setIndex] = useState(0)
+  const [percentage, setPercentage] = useState(1.0)
 
   return (
     <div>
-      <InteractiveWater percentaje={index / 2} />
+      <InteractiveWater percentaje={percentage} />
       <Slider currentIndex={index}>
-        <div style={{
-          position: 'fixed',
-          top: 0,
-          bottom: 0,
-          display: 'flex',
-          placeItems: 'center',
-          backgroundColor: 'white',
-          height: '100vh',
-        }}
-        >
-          <CircularButton text="W" onClick={() => setIndex(1)} />
-        </div>
-        <RoundedButton text="😁" onClick={() => setIndex(2)} backgroundColor="rgb(220, 0, 0)" />
-        <IntroSlide goNext={() => setIndex(0)} />
+        <IntroSlide goNext={() => { setIndex(1); setPercentage(0.9) }} texts={Espanol.Slide1} />
+        <IntroductionSlide goNext={() => { setIndex(0); setPercentage(1.0) }} />
       </Slider>
     </div>
   )
