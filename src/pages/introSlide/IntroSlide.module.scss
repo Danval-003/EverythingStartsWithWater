@@ -10,10 +10,24 @@
     /* Otros estilos, como font-weight y font-style si es necesario */
 }
 
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Ajusta la distancia de levitación según tus preferencias */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  
 .principal{
     width: 100vw;
     height: 100vh;
     place-items: center;
+    animation: floatAnimation 2s ease-in-out infinite;
     h1{
         font-family: 'MiFuente', sans-serif; /* Usa la fuente en el cuerpo del documento */
         font-size: 7vw;
