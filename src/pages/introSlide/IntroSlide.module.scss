@@ -7,11 +7,24 @@
 .principal{
     width: 100vw;
     height: 100vh;
-
+    place-items: center;
     h1{
         font-family: 'MiFuente', sans-serif; /* Usa la fuente en el cuerpo del documento */
-        text-align: center;
-        font-size: 6vw; /* Ajusta el tamaño de la fuente según tus preferencias */
+        font-size: 8vw;
+        margin: 10vw;
+        margin-top: 30vh;
     }
     
+    
+}
+
+
+@media (max-width: 768px) {
+    .principal{
+        h1{
+            font-size: 14vw;
+            margin: 1vw;
+            margin-top: 30vh;
+        }
+    }
 }

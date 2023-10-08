@@ -2,9 +2,9 @@ import { React, useState } from 'react'
 import PropTypes from 'prop-types'
 import { principal } from './IntroSlide.module.scss'
 
-const IntroSlide = ({ goNext }) => (
+const IntroSlide = ({ goNext, texts }) => (
   <div className={principal}>
-    <h1>Everything Starts With Water</h1>
+    <h1>{texts[0]}</h1>
     <button onClick={goNext} type="button">
       Hola
     </button>
@@ -13,6 +13,7 @@ const IntroSlide = ({ goNext }) => (
 
 IntroSlide.propTypes = {
   goNext: PropTypes.func,
+  texts: PropTypes.arrayOf(PropTypes.string).isRequired,
 }
 
 IntroSlide.defaultProps = {
