@@ -15,33 +15,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
 
-@keyframes movement {
+@keyframes floatAnimation {
     0% {
-        transform: translateY(-2.5vh);
-        opacity: 0.5;
-    }
-    25% {
-        transform: translateY(0vh);
-        opacity: 1;
+      transform: translateY(0);
     }
     50% {
-        transform: translateY(0vh);
-        opacity: 0.5;
-    }
-    75% {
-        transform: translateY(0vh);
-        opacity: 1;
+      transform: translateY(-10px); /* Ajusta la distancia de levitación según tus preferencias */
     }
     100% {
-        transform: translateY(-2.5vh);
-        opacity: 0.5;
+      transform: translateY(0);
     }
 }
 
 .principal {
     width: 100vw;
     height: 100vh;
-    animation: movement 6s ease-in-out infinite
+    animation: floatAnimation 2s ease-in-out infinite
 }
 
 .principal h1 {
@@ -59,7 +48,7 @@
     text-align: center;
     font-size: 4.5vw;
     color: rgb(255, 0, 0);
-    margin-top: 0vh;
+    margin-top: -1vh;
     text-shadow: 0.1vw 0.1vw 0.1vw rgb(38, 38, 38);
 }
 
@@ -68,26 +57,39 @@
     font-size: 1.25vw;
     margin-left: 2vw;
     margin-right: 2vw;
-    animation: movement 6s ease-in-out infinite
+    margin-top: -3vw;
+    animation: floatAnimation 2s ease-in-out infinite
+}
+
+.smallVideoContainer { 
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+
+}
+  
+.smallVideo {
+    width: 25vw;
+    border: 5px solid white;
+    height: auto;
+    margin-bottom: 1vw;
 }
 
 @media (max-width: 768px) {
     .principal h1 {
     font-size: 5.5vw;
     color: rgb(212, 236, 255);
-    margin-top: 30vh;
+    margin-top: 21vh;
     margin-left: 10vw;
     margin-right: 10vw;
     text-shadow: 0 0.1vw 0.2vw rgb(38, 38, 38);
-    line-height: 4vh;
+    line-height: 6vh;
     }
 
     .principal h2 {
-    font-family: 'Ubuntu', sans-serif;
-    text-align: center;
     font-size: 7vw;
-    color: rgb(192, 62, 32);
-    line-height: 4vh;
+    line-height: 6.6vh;
     text-shadow: 0.1vw 0.1vw 0.1vw rgb(38, 38, 38);
     }
 
@@ -96,22 +98,15 @@
     font-size: 3vw;
     margin-left: 3vw;
     margin-right: 3vw;
+    margin-top: -4vh;
+    }
+    .smallVideo{
+        width: 40vw;
+        margin-bottom: 1vw;
     }
 }
 
-.videoContainer {
-    width: 5%; /* Cambia el ancho según lo pequeño que desees el video */
-    border: 5px solid white; /* Borde blanco alrededor del video */
-}
 
-.small-video-container {
-    width: 50%; /* Reducir el ancho al 50% para hacer el video más pequeño */
-    border: 5px solid white; /* Borde blanco alrededor del video y el reproductor */
-}
-
-.small-video {
-    width: 100%; /* Haz que el video llene el ancho del contenedor */
-    height: auto; /* Mantén la proporción original del video */
-}
+  
 
 

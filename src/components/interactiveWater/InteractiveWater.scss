@@ -57,3 +57,31 @@
 	filter: blur(2px);
 	animation: wave 6s infinite ease-in-out;
 }
+
+.water-meter {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	z-index: 1;
+
+  
+	.arrow-image {
+		/* Estilos para la flecha */
+		position: absolute;
+		width: 3vw;
+		height: auto;
+		left: -10px;
+		transition: top 0.5s ease; /* Para animar el movimiento de la flecha */
+		z-index: 2;
+	}
+
+	.rule-image {
+		width: 1.85vw;
+		height: auto;
+	}
+}
+  
