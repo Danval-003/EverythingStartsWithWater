@@ -8,5 +8,10 @@
         "Hurry, Time is Running Out!",
         "Get ready for an urgent journey! Water, our planet's blue treasure, is vital for life. But, did you know that climate change is threatening its availability?",
         "Next"
-    ]
+    ],
+    "WorldSlide": [
+        "This is our world.",
+        "Approximately 71% of the Earth's surface is covered by water. Of this percentage, the oceans contain approximately 96.5% of Earth's water, while the rest is found in rivers, lakes, glaciers, aquifers, and in the atmosphere.",
+        "Next"
+        ]
 }

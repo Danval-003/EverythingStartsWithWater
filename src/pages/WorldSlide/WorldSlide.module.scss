@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'MiFuente';
+    src: url('../../fonts/RAINYDAYS.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gabarito';
+    src: url('../../fonts/Gabarito-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NewTitle';
+    src: url('../../fonts/kids-Magazine.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+
+@keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Ajusta la distancia de levitación según tus preferencias */
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.principal {
+    width: 100vw;
+    height: 100vh;
+}
+
+.onWater{
+    animation: floatAnimation 6s ease-in-out infinite alternate;
+}
+
+.world{
+    position: relative;
+    top: -70vh;
+    right: -50vw;
+}
+
+.principal h1 {
+    font-family: 'Bungee Inline', sans-serif;
+    text-align: left;
+    font-size: 5.5vw;
+    color: rgb(27, 249, 97);
+    margin-top: 17vh;
+    margin-left: 5vw;
+    text-shadow: 0 0.1vw 0.2vw rgb(38, 38, 38);
+    line-height: 0vh;
+}
+
+.principal h2 {
+    font-family: 'Bungee Inline', sans-serif;
+    text-align: center;
+    font-size: 4.5vw;
+    color: rgb(255, 0, 0);
+    margin-top: -1vh;
+    text-shadow: 0.1vw 0.1vw 0.1vw rgb(38, 38, 38);
+}
+
+
+.secondary {
+    font-family: 'Gabarito';
+    font-size: 1.5vw;
+    margin-left: 5.8vw;
+    margin-right: 10vw;
+    margin-top: 11vw;
+    text-align: left;
+    animation: floatAnimation 2s ease-in-out infinite
+}
+
+.smallVideoContainer { 
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+
+}
+  
+.smallVideo {
+    width: 25vw;
+    border: 5px solid white;
+    height: auto;
+    margin-bottom: 1vw;
+}
+
+@media (max-width: 768px) {
+    .principal h1 {
+    font-size: 5.5vw;
+    color: rgb(212, 236, 255);
+    margin-top: 13vh;
+    margin-left: 3vw;
+    margin-right: 10vw;
+    text-shadow: 0 0.1vw 0.2vw rgb(38, 38, 38);
+    line-height: 6vh;
+    }
+
+    .principal h2 {
+    font-size: 7vw;
+    line-height: 6.6vh;
+    text-shadow: 0.1vw 0.1vw 0.1vw rgb(38, 38, 38);
+    }
+
+    .secondary {
+    font-family: 'Gabarito';
+    font-size: 3vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 19vh;
+    }
+    .smallVideo{
+        width: 40vw;
+        margin-bottom: 1vw;
+    }
+    .world{
+        height: 100vh;
+        left: 50vw;
+        top: -60vh;
+    }
+}
+
+
+  
+
+
