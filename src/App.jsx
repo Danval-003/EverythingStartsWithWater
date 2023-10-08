@@ -28,15 +28,11 @@ const App = () => {
       <div style={{ zIndex: 1 }}>
         <Slider currentIndex={index}>
           <IntroSlide goNext={() => { setIndex(1); setPercentage(0.9) }} texts={Languagues[indexLanguage].Slide1} />
-          <IntroductionSlide goNext={() => { setIndex(0); setPercentage(1.0) }} texts={Languagues[indexLanguage].Slide2} />
+          <IntroductionSlide goNext={() => { setIndex(2); setPercentage(1.0) }} texts={Languagues[indexLanguage].Slide2} />
+          <SweetWaterSlide goNext={() => { setIndex(0); setPercentage(1.0) }} texts={Languagues[indexLanguage].Slide3} />
         </Slider>
       </div>
       <InteractiveWater percentaje={percentage} />
-      <Slider currentIndex={index}>
-        <IntroSlide goNext={() => { setIndex(1); setPercentage(0.9) }} texts={Espanol.Slide1} />
-        <IntroductionSlide goNext={() => { setIndex(2); setPercentage(1.0) }} />
-        <SweetWaterSlide goNext={() => { setIndex(0); setPercentage(1.0) }}/>
-      </Slider>
     </div>
   )
 }
