@@ -126,7 +126,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-
+  animation: cycleAnimation 2s ease-in-out infinite;
   &:hover {
     background-color: #000000; /* Color del botón al pasar el ratón */
   }
