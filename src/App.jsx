@@ -1,13 +1,13 @@
 import { useState, React } from 'react'
-import Languagues from '@text'
-import texts from './texts'
 import {
   InteractiveWater, Slider, Pills,
 } from './components'
 import './App.css'
 import {
-  IntroSlide, IntroductionSlide, CycleWaterSlide,
+  IntroSlide, IntroductionSlide, WorldSlide, CycleWaterSlide,
 } from './pages'
+import Languagues from './texts'
+
 import Ima from './assets/desiertoIA.jpg'
 
 const App = () => {
@@ -18,8 +18,8 @@ const App = () => {
   return (
     <div>
       <img
-        alt="Fondo"
         src={Ima}
+        alt="Mundo sin agua, Desierto"
         style={{
           width: '100vw',
           height: '100vh',
@@ -49,8 +49,12 @@ const App = () => {
             texts={Languagues[indexLanguage].Slide2}
           />
           <CycleWaterSlide
-            goNext={() => { setIndex(0); setPercentage(1.0) }}
+            goNext={() => { setIndex(3); setPercentage(1.0) }}
             texts={Languagues[indexLanguage].Slide4}
+          />
+          <WorldSlide
+            goNext={() => { setIndex(0); setPercentage(0.5) }}
+            texts={Languagues[indexLanguage].WorldSlide}
           />
         </Slider>
       </div>
