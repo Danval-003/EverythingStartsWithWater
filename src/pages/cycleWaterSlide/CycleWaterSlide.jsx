@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
+import { RoundedButton } from '../../components'
 import {
   waterCycleContainer,
   waterCycleCircle,
@@ -68,9 +69,10 @@ const CycleWaterSlide = ({ goNext, texts }) => {
           </div>
         </div>
       </div>
-      <button onClick={goNext} type="button" className={cycleAnimation}>
-        {texts.info[2]}
-      </button>
+
+      <div className={cycleAnimation}>
+        <RoundedButton onClick={goNext} text={texts.info[2]}/>
+      </div>
     </div>
   )
 }

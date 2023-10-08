@@ -55,7 +55,7 @@
   margin-top: 12vh;
   height: 20vw;
   width: 20vw; /* Tamaño relativo al ancho de la pantalla */
-  border: 2px solid #0077FF; /* Color del borde del círculo */
+  border: 0.3vw solid #1a98e0; /* Color del borde del círculo */
   border-radius: 50%; /* Hace que el contenedor sea un círculo */
   overflow: hidden; /* Oculta partes de las imágenes que salgan del círculo */
   background-color: rgba(0, 119, 255, 0.1); /* Color de fondo del círculo */
@@ -88,7 +88,7 @@
 }
 
 .arrow {
-  background-color: #0077FF; /* Color de fondo de las flechas */
+  background-color: #1a98e0; /* Color de fondo de las flechas */
   color: white;
   font-size: 2vw; /* Tamaño relativo al ancho de la pantalla */
   border: none;
@@ -96,6 +96,8 @@
   width: 3vw; /* Tamaño relativo al ancho de la pantalla */
   height: 5vw; /* Tamaño relativo al ancho de la pantalla */
   display: flex;
+  margin-left: 0.1vw;
+  margin-right: 0.1vw;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -103,7 +105,7 @@
 }
 
 .arrow:hover {
-  background-color: #0055CC; /* Color de fondo de las flechas al pasar el ratón */
+  background-color: #0f7290; /* Color de fondo de las flechas al pasar el ratón */
 }
 
 .waterTitleText {
@@ -137,7 +139,7 @@
 }
 
 .cycleAnimation {
-  background-color: #000000; /* Color del botón */
+  background-color: #00000000; /* Color del botón */
   color: white;
   font-size: 1.5vw;
   padding: 1vh 2vw; /* Espaciado relativo al ancho y altura de la pantalla */
@@ -147,6 +149,6 @@
   transition: background-color 0.3s ease;
   animation: cycleAnimation 2s ease-in-out infinite;
   &:hover {
-    background-color: #000000; /* Color del botón al pasar el ratón */
+    background-color: #00000000; /* Color del botón al pasar el ratón */
   }
 }
