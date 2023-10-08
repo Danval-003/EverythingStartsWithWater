@@ -62,6 +62,7 @@ const App = () => {
           />
           <CycleWaterSlide
             goNext={() => { setIndex(0); setPercentage(1.0) }}
+            goReturn={() => { setIndex(4); setPercentage(0.8) }}
             texts={Languagues[indexLanguage].Slide4}
           />
         </Slider>

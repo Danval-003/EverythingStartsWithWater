@@ -25,7 +25,7 @@ import runoffImage from '../../assets/paisaje.png'
 
 const images = [evaporationImage, condensationImage, precipitationImage, runoffImage]
 
-const CycleWaterSlide = ({ goNext, texts }) => {
+const CycleWaterSlide = ({ goNext, texts, goReturn }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const handleNextClick = () => {
@@ -71,6 +71,7 @@ const CycleWaterSlide = ({ goNext, texts }) => {
       </div>
 
       <div className={cycleAnimation}>
+        <RoundedButton onClick={goReturn} text={texts.info[3]}/>
         <RoundedButton onClick={goNext} text={texts.info[2]}/>
       </div>
     </div>
@@ -79,11 +80,13 @@ const CycleWaterSlide = ({ goNext, texts }) => {
 
 CycleWaterSlide.propTypes = {
   goNext: PropTypes.func,
+  goReturn: PropTypes.func,
   texts: PropTypes.arrayOf(PropTypes.string).isRequired,
 }
 
 CycleWaterSlide.defaultProps = {
   goNext: null,
+  goReturn: null,
 }
 
 export default CycleWaterSlide
