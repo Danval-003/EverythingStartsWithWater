@@ -1,0 +1,21 @@
+.horizontal-image-list {
+    display: flex;
+    justify-content: space-between; /* Espacio uniforme entre las imágenes */
+    align-items: center; /* Alineación vertical al centro */
+    /* Ajusta el ancho máximo para evitar que las imágenes se extiendan demasiado */
+    max-width: 600px; /* Puedes ajustar este valor según tus necesidades */
+    margin: 0 auto; /* Centrar horizontalmente el contenedor de imágenes */
+  }
+  
+  .horizontal-image-list img {
+    max-width: 48%; /* Ancho máximo de cada imagen, ajusta según sea necesario */
+  }
+  
+  .image-gallery {
+    display: flex;
+  }
+
+  .image-gallery img {
+    margin-right: 10px; /* Ajusta el valor según tus preferencias */
+  }
+
