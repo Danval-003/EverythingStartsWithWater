@@ -1,6 +1,6 @@
 // CycleWaterSlide.jsx
 
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { RoundedButton } from '../../components'
 import {
@@ -38,11 +38,6 @@ const CycleWaterSlide = ({ goNext, texts, goReturn }) => {
   const handlePrevClick = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
   }
-
-  useEffect(() => {
-    console.log(currentImageIndex)
-    console.log("images", images)
-  }, [currentImageIndex, setCurrentImageIndex])
 
   return (
     <div className={waterCycleContainer}>

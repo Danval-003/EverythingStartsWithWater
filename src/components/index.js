@@ -6,6 +6,7 @@ import StickerMaker from './StickerMaker'
 import Pills from './Pills'
 import LinkButton from './linkButton'
 import ImageGalery from './ImageGalery'
+import Hourglass from './Hourglass'
 
 export {
   InteractiveWater,
@@ -16,4 +17,5 @@ export {
   Pills,
   LinkButton,
   ImageGalery,
+  Hourglass,
 }

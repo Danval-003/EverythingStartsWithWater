@@ -26,7 +26,7 @@ const ImageGalery = () => {
 
   return (
     <div className="horizontal-image-list">
-      <button>
+      <button type="button">
         <img
           className={isHeads1 ? 'floating-animation' : ''}
           src={isHeads1 ? cascade : paisaje}
@@ -35,7 +35,7 @@ const ImageGalery = () => {
         />
       </button>
 
-      <button>
+      <button type="button">
         <img
           className={isHeads2 ? 'floating-animation' : ''}
           src={isHeads2 ? cascada : naturaleza}
@@ -44,7 +44,7 @@ const ImageGalery = () => {
         />
       </button>
 
-      <button>
+      <button type="button">
         <img
           className={isHeads3 ? 'floating-animation' : ''}
           src={isHeads3 ? rivers : ola}
