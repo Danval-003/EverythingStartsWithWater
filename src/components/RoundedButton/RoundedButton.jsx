@@ -4,13 +4,14 @@ import styled from 'styled-components'
 
 const Button = styled.button`
     background-color: ${(props) => props.backgroundColor || '#409CD0'};
-    border-radius: 10px;
-    padding: 10px 20px; 
+    border-radius: 10vw;
+    padding: 1vw 2vw; 
     border: none;
     cursor: pointer;
     color: white;
-    font-size: 16px; 
+    font-size: 1vw; 
     font-family: 'PPFragment';
+    margin: 1.2vw;
     transition: background-color 0.3s ease;
 
     &:hover {

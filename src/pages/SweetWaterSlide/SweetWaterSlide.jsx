@@ -21,7 +21,9 @@ const SweetWaterSlide= ({ goNext, texts }) => {
       </p>
       
       <ImageGalery/>
-      <RoundedButton text={texts[3]} onClick={goNext}/>
+      <div className="btn-div">
+        <RoundedButton text={texts[3]} onClick={goNext}/>
+      </div>
     </div>
   );
 };

@@ -18,6 +18,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
 
+@keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Ajusta la distancia de levitación según tus preferencias */
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+
+
 .principal {
     width: 100vw;
     height: 100vh;
@@ -25,7 +39,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    animation: floatAnimation 2s infinite;
     h1 {
         font-family: 'Bungee Inline', sans-serif; /* Usa la fuente en el cuerpo del documento */
         font-size: 4vw;
@@ -75,16 +89,4 @@
     animation-timing-function: ease-in-out;
     
 }
-  
-  @keyframes floatAnimation {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
   
