@@ -5,6 +5,7 @@ import RoundedButton from './RoundedButton'
 import StickerMaker from './StickerMaker'
 import Pills from './Pills'
 import LinkButton from './linkButton'
+import ImageGalery from './ImageGalery'
 
 export {
   InteractiveWater,
@@ -14,4 +15,5 @@ export {
   StickerMaker,
   Pills,
   LinkButton,
+  ImageGalery,
 }

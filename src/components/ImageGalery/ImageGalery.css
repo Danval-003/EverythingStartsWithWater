@@ -1,0 +1,35 @@
+.horizontal-image-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    margin: 0 auto;
+  }
+  
+  .horizontal-image-list img {
+    max-width: 20%;
+  }
+  
+
+  
+  .image-gallery {
+    display: flex;
+  }
+
+  @keyframes floating {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .floating-animation {
+    animation: floating 3s ease-in-out infinite;
+  }
+  

@@ -4,7 +4,7 @@ import {
 } from './components'
 import './App.css'
 import {
-  IntroSlide, IntroductionSlide, WorldSlide, CycleWaterSlide,
+  IntroSlide, IntroductionSlide, WorldSlide, CycleWaterSlide, SweetWaterSlide
 } from './pages'
 import Languagues from './texts'
 
@@ -60,9 +60,9 @@ const App = () => {
             goNext={() => { setIndex(0); setPercentage(1.0) }}
             texts={Languagues[indexLanguage].Slide4}
           />
-
         </Slider>
       </div>
+      <InteractiveWater percentaje={percentage} />
     </div>
   )
 }
