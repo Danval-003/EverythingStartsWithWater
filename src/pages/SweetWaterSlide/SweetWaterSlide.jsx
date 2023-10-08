@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { principal } from './SweetWaterSlide.module.scss'
 import { RoundedButton, ImageGalery } from '../../components'
 
+
 const SweetWaterSlide = ({ goNext, texts }) => (
   <div className={principal}>
 

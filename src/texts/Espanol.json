@@ -13,13 +13,31 @@
         "El Oro Líquido",
         "El agua dulce es fundamental para la vida en la Tierra.",
         "Desde los océanos hasta los ríos y los lagos, es esencial para la supervivencia de todas las formas de vida.",
-        "Siguiente"],
-
-    "Slide4": [
-        "El Ciclo del Agua en Acción:",
-        "El agua sigue un ciclo constante. Se evapora desde la superficie, forma nubes, cae como lluvia y fluye de regreso a los océanos y ríos. Es una danza esencial. 😯",
         "Siguiente"
     ],
+    "Slide4": {
+        "title": [    
+            "EVAPORACIÓN",
+            "TRANSPIRACIÓN",
+            "CONDENSACIÓN",
+            "PRECIPITACIÓN",
+            "ESCORRENTÍA SUPERFICIAL",
+            "AGUAS FREÁTICAS"
+        ],
+        "text": [    
+            "El calor del Sol hace que el agua se evapore de océanos, lagos y arroyos. La evaporación ocurre cuando el agua líquida en la superficie de la Tierra se transforma en vapor de agua en nuestra atmósfera.",
+            "El agua de las plantas y los árboles también ingresa a la atmósfera. A esto se le llama transpiración.",
+            "El vapor de agua caliente se eleva a través de la atmósfera terrestre. A medida que el vapor de agua se eleva, el aire fresco en la atmósfera hace que se condense en agua líquida, formando nubes.",
+            "Cuando una nube se llena de agua líquida, cae del cielo principalmente en forma de lluvia o nieve: esto se conoce como precipitación. La lluvia y la nieve llenan lagos y arroyos, y el proceso comienza de nuevo.",
+            "La escorrentía superficial no es más que agua 'corriendo' por la superficie de la Tierra. La lluvia fluye por la superficie de la Tierra cuesta abajo debido a la gravedad.",
+            "Parte del agua se filtra al suelo como humedad del suelo o agua subterránea."
+        ],
+        "info": [   
+            "El Ciclo del Agua en Acción:",
+            "El agua sigue un ciclo constante. Se evapora de la superficie, forma nubes, cae como lluvia y fluye de regreso a los océanos y ríos. Es un baile esencial. 😯",
+            "Siguiente"
+        ]
+    },
     "WorldSlide": [
         "Este es nuestro mundo",
         "Aproximadamente el 71% de la superficie de la Tierra está cubierta por agua. De este porcentaje, los océanos contienen aproximadamente el 96.5% del agua de la Tierra, mientras que el resto se encuentra en ríos, lagos, glaciares, acuíferos y en la atmósfera.",
