@@ -7,7 +7,7 @@ import { RoundedButton } from '@components'
 
 import videoNasa from '../../assets/introductionNasa.webm'
 
-const IntroductionSlide = ({ goNext, texts }) => (
+const IntroductionSlide = ({ goNext, texts,  }) => (
   <div className={principal}>
     <h1>{texts[0]}</h1>
     <h2>{texts[1]}</h2>
