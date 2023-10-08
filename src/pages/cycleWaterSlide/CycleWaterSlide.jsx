@@ -18,12 +18,15 @@ import {
 // import condensationImage from '../../assets/condensation.png'
 // import precipitationImage from '../../assets/precipitation.png'
 // import runoffImage from '../../assets/runoff.png'
-import evaporationImage from '../../assets/arrow.png'
-import condensationImage from '../../assets/cascada.png'
-import precipitationImage from '../../assets/cohete.png'
-import runoffImage from '../../assets/paisaje.png'
+import evaporationImage from '../../assets/evaporation.gif'
+import transpirationImage from '../../assets/transpiration.gif'
+import condensationImage from '../../assets/condensation.gif'
+import precipitationImage from '../../assets/precipitation.gif'
+import runoffImage from '../../assets/runoff.gif'
+import groundwaterImage from '../../assets/groundwater.gif'
 
-const images = [evaporationImage, condensationImage, precipitationImage, runoffImage]
+const images = [evaporationImage,
+  transpirationImage, condensationImage, precipitationImage, runoffImage, groundwaterImage]
 
 const CycleWaterSlide = ({ goNext, texts, goReturn }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -71,8 +74,8 @@ const CycleWaterSlide = ({ goNext, texts, goReturn }) => {
       </div>
 
       <div className={cycleAnimation}>
-        <RoundedButton onClick={goReturn} text={texts.info[3]}/>
-        <RoundedButton onClick={goNext} text={texts.info[2]}/>
+        <RoundedButton onClick={goReturn} text={texts.info[3]} />
+        <RoundedButton onClick={goNext} text={texts.info[2]} />
       </div>
     </div>
   )

@@ -32,7 +32,7 @@
   font-family: 'Bungee Inline', sans-serif;
   text-align: center;
   font-size: 5vw;
-  color: rgb(255, 135, 55);
+  color: rgb(195, 255, 0);
   margin-bottom: 0vh;
   margin-left: 20vw;
   margin-right: 20vw;
@@ -83,7 +83,7 @@
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 98%;
   padding: 0 2vw; /* Espaciado lateral relativo al ancho de la pantalla */
   z-index: 1;
 }
@@ -91,11 +91,11 @@
 .arrow {
   background-color: #1a98e0; /* Color de fondo de las flechas */
   color: white;
-  font-size: 2vw; /* Tamaño relativo al ancho de la pantalla */
+  font-size: 1.2vw; /* Tamaño relativo al ancho de la pantalla */
   border: none;
   border-radius: 50%;
-  width: 3vw; /* Tamaño relativo al ancho de la pantalla */
-  height: 5vw; /* Tamaño relativo al ancho de la pantalla */
+  width: 1vw; /* Tamaño relativo al ancho de la pantalla */
+  height: 3vw; /* Tamaño relativo al ancho de la pantalla */
   display: flex;
   margin-left: 0.1vw;
   margin-right: 0.1vw;
@@ -120,9 +120,9 @@
   text-align: justify;
   font-size: 2vw;
   height: -20vh;
-  color: rgb(0, 255, 128);
+  color: rgb(255, 251, 0);
   margin-left: 10vw;
-  margin-bottom: 2vh;
+  margin-bottom: -2vh;
   text-shadow: 0 0.1vw 0.2vw rgb(38, 38, 38);
   line-height: -10vh;
   animation: cycleAnimation 2s ease-in-out infinite
