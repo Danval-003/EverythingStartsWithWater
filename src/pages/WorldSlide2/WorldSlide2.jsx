@@ -3,9 +3,7 @@ import PropTypes from 'prop-types'
 import { RoundedButton } from '../../components'
 import {
   principal, secondary, smallVideoContainer, smallVideo, onWater, world,
-} from './WorldSlide.module.scss'
-
-import Earth from '../../assets/earth.gif'
+} from './WorldSlide2.module.scss'
 
 const WorldSlide = ({ goNext, texts }) => (
   <div>
@@ -16,7 +14,6 @@ const WorldSlide = ({ goNext, texts }) => (
       </p>
       <RoundedButton onClick={goNext} text={texts[2]} />
     </div>
-    <img src={Earth} alt="JAksjdk" className={world} />
   </div>
 
 )

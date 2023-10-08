@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {
-  principal, secondary, smallVideoContainer, smallVideo,
+  principal, secondary, smallVideoContainer, smallVideo,botonn
 } from './IntroductionSlide.module.scss'
+import { RoundedButton } from '@components'
 
 import videoNasa from '../../assets/introductionNasa.webm'
 
@@ -18,9 +19,9 @@ const IntroductionSlide = ({ goNext, texts }) => (
         Tu navegador no admite el elemento de video.
       </video>
     </div>
-    <button onClick={goNext} type="button">
-      {texts[3]}
-    </button>
+    <div className={botonn}>
+      <RoundedButton onClick={goNext} text={texts[3]} />
+    </div>
   </div>
 )
 

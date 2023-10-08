@@ -1,3 +1,3 @@
-import SweetWaterSlide from "./SweetWaterSlide";
+import SweetWaterSlide from './SweetWaterSlide'
 
-export default SweetWaterSlide;
+export default SweetWaterSlide

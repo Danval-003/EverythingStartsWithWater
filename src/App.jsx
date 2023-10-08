@@ -4,7 +4,7 @@ import {
 } from './components'
 import './App.css'
 import {
-  IntroSlide, IntroductionSlide, WorldSlide, CycleWaterSlide, SweetWaterSlide,
+  IntroSlide, IntroductionSlide, WorldSlide, CycleWaterSlide, SweetWaterSlide, WorldSlide2,
 } from './pages'
 import Languagues from './texts'
 
@@ -41,20 +41,20 @@ const App = () => {
       <div style={{ zIndex: 1 }}>
         <Slider currentIndex={index}>
           <IntroSlide
-            goNext={() => { setIndex(1); setPercentage(0.9) }}
+            goNext={() => { setIndex(1); setPercentage(0.85) }}
             texts={Languagues[indexLanguage].Slide1}
           />
-          <IntroductionSlide
-            goNext={() => { setIndex(2); setPercentage(0.8) }}
-            texts={Languagues[indexLanguage].Slide2}
-          />
           <SweetWaterSlide
-            goNext={() => { setIndex(3); setPercentage(0.75) }}
+            goNext={() => { setIndex(2); setPercentage(0.75) }}
             texts={Languagues[indexLanguage].Slide3}
           />
           <WorldSlide
-            goNext={() => { setIndex(4); setPercentage(0.7) }}
+            goNext={() => { setIndex(3); setPercentage(0.7) }}
             texts={Languagues[indexLanguage].WorldSlide}
+          />
+          <WorldSlide2
+            goNext={() => { setIndex(4); setPercentage(0.8) }}
+            texts={Languagues[indexLanguage].WorldSlide2}
           />
           <IntroductionSlide
             goNext={() => { setIndex(5); setPercentage(0.65) }}

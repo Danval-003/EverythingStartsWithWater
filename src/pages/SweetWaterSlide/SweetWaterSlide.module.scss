@@ -44,8 +44,10 @@
         font-family: 'Bungee Inline', sans-serif; /* Usa la fuente en el cuerpo del documento */
         font-size: 4vw;
         margin: 5vw;
-        margin-top: 3vh;
-        color: rgb(239, 184, 16);
+        margin-top: 5.5vh;
+        color: rgb(234, 175, 0);
+        text-shadow: 0.1vw 0.1vw 0.1vw black;
+        animation: floatAnimation 1s infinite;
     }
 
     p {
@@ -53,6 +55,7 @@
         text-align: center;
         font-size: 2vw; /* Ajusta el tamaño de la fuente según tus preferencias */
         margin-top: 1vh;
+        line-height: 1vh;
     }
     
     .secondary {
