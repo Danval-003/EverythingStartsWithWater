@@ -12,7 +12,7 @@ import Ima from './assets/desiertoIA.jpg'
 
 const App = () => {
   const [index, setIndex] = useState(0)
-  const [percentage, setPercentage] = useState(1.0)
+  const [percentage, setPercentage] = useState(0.99)
   const [indexLanguage, setIndexLanguage] = useState(0)
 
   return (
