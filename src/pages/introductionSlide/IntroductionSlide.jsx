@@ -13,7 +13,7 @@ const IntroductionSlide = ({ goNext, texts }) => (
     <button onClick={goNext} type="button">
       {texts[3]}
     </button>
-    <LinkButton />
+    {/* <StickerMaker imageUrl={cohete} /> */}
   </div>
 )
 

@@ -10,31 +10,73 @@
     /* Otros estilos, como font-weight y font-style si es necesario */
 }
 
+@font-face {
+    font-family: 'NewTitle'; /* Nombre de la fuente */
+    src: url('../../fonts/kids-Magazine.ttf') format('truetype'); /* Ruta a la fuente TTF */
+    /* Otros estilos, como font-weight y font-style si es necesario */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
 .principal{
     width: 100vw;
     height: 100vh;
 
     h1{
-        font-family: 'MiFuente', sans-serif; /* Usa la fuente en el cuerpo del documento */
+        font-family: 'Ubuntu', sans-serif; /* Usa la fuente en el cuerpo del documento */
         text-align: center;
-        font-size: 2.5vw; /* Ajusta el tamaño de la fuente según tus preferencias */
-        color: rgb(195, 0, 0);
-        margin-top: 20vh;
+        font-size: 3.5vw; /* Ajusta el tamaño de la fuente según tus preferencias */
+        color: rgb(212, 236, 255);
+        margin-top: 30vh;
         text-shadow: 0 0.1vw 0.2vw rgb(38, 38, 38);
+        line-height: 0vh;
     }
 
     h2{
-        font-family: 'MiFuente', sans-serif; /* Usa la fuente en el cuerpo del documento */
+        font-family: 'Ubuntu', sans-serif; /* Usa la fuente en el cuerpo del documento */
         text-align: center;
-        font-size: 3.4vw; /* Ajusta el tamaño de la fuente según tus preferencias */
-        color: rgb(195, 0, 0);
+        font-size: 4.5vw; /* Ajusta el tamaño de la fuente según tus preferencias */
+        color: rgb(192, 62, 32);
         margin-top: 0vh;
-        text-shadow: 0 0.1vw 0.2vw rgb(38, 38, 38);
+        text-shadow: 0.1vw 0.1vw 0.1vw rgb(38, 38, 38);
     }
     
 }
 
 .secondary {
     font-family: 'Gabarito';
+    font-size: 1.25vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
+
+@media (max-width: 768px) {
+    .principal{
+        h1{
+            font-size: 5.5vw; /* Ajusta el tamaño de la fuente según tus preferencias */
+            color: rgb(212, 236, 255);
+            margin-top: 30vh;
+            margin-left: 10vw;
+            margin-right: 10vw;
+            text-shadow: 0 0.1vw 0.2vw rgb(38, 38, 38);
+            line-height: 4vh;
+        }
     
+        h2{
+            font-family: 'Ubuntu', sans-serif; /* Usa la fuente en el cuerpo del documento */
+            text-align: center;
+            font-size: 7vw; /* Ajusta el tamaño de la fuente según tus preferencias */
+            color: rgb(192, 62, 32);
+            line-height: 4vh;
+            text-shadow: 0.1vw 0.1vw 0.1vw rgb(38, 38, 38);
+        }
+    }
+
+    .secondary {
+        font-family: 'Gabarito';
+        font-size: 3vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+    
+}
