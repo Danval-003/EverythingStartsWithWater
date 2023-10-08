@@ -1,17 +1,39 @@
 import React from 'react'
-import styles from './LinkButton.module.scss'
+import './LinkButton.scss'
 
 const LinkButton = () => (
-  <div>
-    <div className={styles['gooey-button-container']}>
-      F*** Awesome
-      <span className={styles.bubbles}>
-        {Array.from({ length: 10 }, (_, index) => (
-          <span className={styles.bubble} key={index} />
-        ))}
+  <>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="gooey">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+          <feColorMatrix
+            in="blur"
+            type="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+            result="highContrastGraphic"
+          />
+          <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
+        </filter>
+      </defs>
+    </svg>
+
+    <button type="button" id="gooey-button">
+      enlaces jeje
+      <span className="bubbles">
+        <span className="bubble" />
+        <span className="bubble" />
+        <span className="bubble" />
+        <span className="bubble" />
+        <span className="bubble" />
+        <span className="bubble" />
+        <span className="bubble" />
+        <span className="bubble" />
+        <span className="bubble" />
+        <span className="bubble" />
       </span>
-    </div>
-  </div>
+    </button>
+  </>
 )
 
 export default LinkButton

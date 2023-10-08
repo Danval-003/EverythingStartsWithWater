@@ -1,8 +1,7 @@
 import { React } from 'react'
 import PropTypes from 'prop-types'
 import { principal, secondary } from './IntroductionSlide.module.scss'
-import { StickerMaker } from '../../components'
-import cohete from '../../assets/rocket.svg'
+import { LinkButton } from '../../components'
 
 const IntroductionSlide = ({ goNext }) => (
   <div className={principal}>
@@ -14,7 +13,7 @@ const IntroductionSlide = ({ goNext }) => (
     <button onClick={goNext} type="button">
       siguiente
     </button>
-    <StickerMaker imageUrl={cohete} />
+    <LinkButton />
   </div>
 )
 
