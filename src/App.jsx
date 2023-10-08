@@ -45,24 +45,28 @@ const App = () => {
             texts={Languagues[indexLanguage].Slide1}
           />
           <SweetWaterSlide
+            goReturn={() => { setIndex(0); setPercentage(1.0) }}
             goNext={() => { setIndex(2); setPercentage(0.75) }}
             texts={Languagues[indexLanguage].Slide3}
           />
           <WorldSlide
-            goNext={() => { setIndex(3); setPercentage(0.7) }}
+            goReturn={() => { setIndex(1); setPercentage(0.85) }}
+            goNext={() => { setIndex(3); setPercentage(0.73) }}
             texts={Languagues[indexLanguage].WorldSlide}
           />
           <WorldSlide2
-            goNext={() => { setIndex(4); setPercentage(0.8) }}
+            goReturn={() => { setIndex(2); setPercentage(0.75) }}
+            goNext={() => { setIndex(4); setPercentage(0.67) }}
             texts={Languagues[indexLanguage].WorldSlide2}
           />
           <IntroductionSlide
-            goNext={() => { setIndex(5); setPercentage(0.7) }}
+            goReturn={() => { setIndex(3); setPercentage(0.73) }}
+            goNext={() => { setIndex(5); setPercentage(0.64) }}
             texts={Languagues[indexLanguage].Slide2}
           />
           <CycleWaterSlide
             goNext={() => { setIndex(0); setPercentage(1.0) }}
-            goReturn={() => { setIndex(4); setPercentage(0.8) }}
+            goReturn={() => { setIndex(4); setPercentage(0.67) }}
             texts={Languagues[indexLanguage].Slide4}
           />
         </Slider>

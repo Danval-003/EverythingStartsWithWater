@@ -7,7 +7,7 @@ import { RoundedButton } from '@components'
 
 import videoNasa from '../../assets/introductionNasa.webm'
 
-const IntroductionSlide = ({ goNext, texts,  }) => (
+const IntroductionSlide = ({ goNext, texts, goReturn}) => (
   <div className={principal}>
     <h1>{texts[0]}</h1>
     <h2>{texts[1]}</h2>
@@ -20,6 +20,7 @@ const IntroductionSlide = ({ goNext, texts,  }) => (
       </video>
     </div>
     <div className={botonn}>
+      <RoundedButton onClick={goReturn} text={texts[4]} />
       <RoundedButton onClick={goNext} text={texts[3]} />
     </div>
   </div>
@@ -27,11 +28,13 @@ const IntroductionSlide = ({ goNext, texts,  }) => (
 
 IntroductionSlide.propTypes = {
   goNext: PropTypes.func,
+  goReturn: PropTypes.func,
   texts: PropTypes.arrayOf(PropTypes.string).isRequired,
 }
 
 IntroductionSlide.defaultProps = {
   goNext: null,
+  goReturn: null,
 }
 
 export default IntroductionSlide
