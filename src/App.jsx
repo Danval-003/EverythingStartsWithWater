@@ -48,14 +48,19 @@ const App = () => {
             goNext={() => { setIndex(2); setPercentage(0.7) }}
             texts={Languagues[indexLanguage].Slide2}
           />
-          <CycleWaterSlide
-            goNext={() => { setIndex(3); setPercentage(1.0) }}
-            texts={Languagues[indexLanguage].Slide4}
-          />
           <WorldSlide
-            goNext={() => { setIndex(0); setPercentage(0.5) }}
+            goNext={() => { setIndex(3); setPercentage(0.5) }}
             texts={Languagues[indexLanguage].WorldSlide}
           />
+          <IntroductionSlide
+            goNext={() => { setIndex(4); setPercentage(0.7) }}
+            texts={Languagues[indexLanguage].Slide2}
+          />
+          <CycleWaterSlide
+            goNext={() => { setIndex(0); setPercentage(1.0) }}
+            texts={Languagues[indexLanguage].Slide4}
+          />
+
         </Slider>
       </div>
     </div>
