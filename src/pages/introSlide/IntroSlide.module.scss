@@ -4,6 +4,12 @@
     /* Otros estilos, como font-weight y font-style si es necesario */
 }
 
+@font-face {
+    font-family: 'Gabarito'; /* Nombre de la fuente */
+    src: url('../../fonts/Gabarito-VariableFont_wght.ttf') format('truetype'); /* Ruta a la fuente TTF */
+    /* Otros estilos, como font-weight y font-style si es necesario */
+}
+
 .principal{
     width: 100vw;
     height: 100vh;
@@ -13,5 +19,15 @@
         text-align: center;
         font-size: 6vw; /* Ajusta el tamaño de la fuente según tus preferencias */
     }
+
+    p{
+        font-family: 'Gabarito'; /* Usa la fuente en el cuerpo del documento */
+        text-align: center;
+        font-size: 2vw; /* Ajusta el tamaño de la fuente según tus preferencias */
+    }
     
+}
+
+.secondary {
+    font-family: 'Gabarito';
 }
