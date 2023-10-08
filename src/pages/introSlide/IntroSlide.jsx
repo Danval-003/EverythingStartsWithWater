@@ -6,7 +6,7 @@ const IntroSlide = ({ goNext, texts }) => (
   <div className={principal}>
     <h1>{texts[0]}</h1>
     <button onClick={goNext} type="button">
-      Hola
+      {texts[1]}
     </button>
   </div>
 )
