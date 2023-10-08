@@ -9,14 +9,19 @@ import {
   arrow,
   waterCycleText,
   cycleAnimation,
+  splitElements,
 } from './CycleWaterSlide.module.scss'
 
 // import evaporationImage from '../../assets/evaporation.png'
 // import condensationImage from '../../assets/condensation.png'
 // import precipitationImage from '../../assets/precipitation.png'
 // import runoffImage from '../../assets/runoff.png'
+import evaporationImage from '../../assets/arrow.png'
+import condensationImage from '../../assets/arrow.png'
+import precipitationImage from '../../assets/arrow.png'
+import runoffImage from '../../assets/arrow.png'
 
-// const images = [evaporationImage, condensationImage, precipitationImage, runoffImage]
+const images = [evaporationImage, condensationImage, precipitationImage, runoffImage]
 
 const CycleWaterSlide = ({ goNext, texts }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -31,31 +36,34 @@ const CycleWaterSlide = ({ goNext, texts }) => {
 
   return (
     <div className={waterCycleContainer}>
-      <div className={waterCycleCircle}>
-        {images.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt={`Ciclo del agua - Etapa ${index + 1}`}
-            className={currentImageIndex === index ? 'active' : ''}
-          />
-        ))}
-        <div className={arrowContainer}>
-          <button onClick={handlePrevClick} type="button" className={arrow}>
-            &#9664;
-            {' '}
-            {/* Flecha izquierda */}
-          </button>
-          <button onClick={handleNextClick} type="button" className={arrow}>
-            &#9654;
-            {' '}
-            {/* Flecha derecha */}
-          </button>
+      <h1>{texts[0]}</h1>
+      <div className={splitElements}>
+        <p className={waterCycleText}>{texts[1]}</p>
+        <div className={waterCycleCircle}>
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`Ciclo del agua - Etapa ${index + 1}`}
+              className={currentImageIndex === index ? 'active' : ''}
+            />
+          ))}
+          <div className={arrowContainer}>
+            <button onClick={handlePrevClick} type="button" className={arrow}>
+              &#9664;
+              {' '}
+              {/* Flecha izquierda */}
+            </button>
+            <button onClick={handleNextClick} type="button" className={arrow}>
+              &#9654;
+              {' '}
+              {/* Flecha derecha */}
+            </button>
+          </div>
         </div>
       </div>
-      <p className={waterCycleText}>{texts[0]}</p>
       <button onClick={goNext} type="button" className={cycleAnimation}>
-        {texts[1]}
+        {texts[2]}
       </button>
     </div>
   )

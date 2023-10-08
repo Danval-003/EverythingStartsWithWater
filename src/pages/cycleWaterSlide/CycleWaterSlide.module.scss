@@ -1,5 +1,10 @@
 /* CycleWaterSlide.module.scss */
 
+@font-face {
+  font-family: 'Gabarito';
+  src: url('../../fonts/Gabarito-VariableFont_wght.ttf') format('truetype');
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
 
 @keyframes cycleAnimation {
@@ -7,7 +12,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-1vw);
   }
   100% {
     transform: translateY(0);
@@ -21,7 +26,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  animation: cycleAnimation 2s ease-in-out infinite;
+}
+
+.waterCycleContainer h1 {
+  font-family: 'Bungee Inline', sans-serif;
+  text-align: center;
+  font-size: 3.5vw;
+  color: rgb(255, 128, 0);
+  margin-bottom: 15vh;
+  text-shadow: 0 0.1vw 0.2vw rgb(38, 38, 38);
+  line-height: 0vh;
+}
+
+.splitElements {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* La columna izquierda ocupa el doble de espacio que la de la derecha */
+  width: 100vw; /* Ancho total de la pantalla */
+  height: 50vh; /* Altura total de la pantalla */
+  align-items: center; /* Centra el grid verticalmente */
+
 }
 
 .waterCycleCircle {
@@ -29,13 +52,14 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 300px; /* Ajusta el tamaño del círculo */
-  height: 300px; /* Ajusta el tamaño del círculo */
+  margin-top: 12vh;
+  height: 20vw;
+  width: 20vw; /* Tamaño relativo al ancho de la pantalla */
   border: 2px solid #0077FF; /* Color del borde del círculo */
   border-radius: 50%; /* Hace que el contenedor sea un círculo */
   overflow: hidden; /* Oculta partes de las imágenes que salgan del círculo */
-  margin-bottom: 20px;
   background-color: rgba(0, 119, 255, 0.1); /* Color de fondo del círculo */
+  animation: cycleAnimation 2s ease-in-out infinite
 }
 
 .waterCycleCircle img {
@@ -59,18 +83,18 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 2vw; /* Espaciado lateral relativo al ancho de la pantalla */
   z-index: 1;
 }
 
 .arrow {
   background-color: #0077FF; /* Color de fondo de las flechas */
   color: white;
-  font-size: 20px;
+  font-size: 2vw; /* Tamaño relativo al ancho de la pantalla */
   border: none;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 3vw; /* Tamaño relativo al ancho de la pantalla */
+  height: 3vw; /* Tamaño relativo al ancho de la pantalla */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,24 +107,27 @@
 }
 
 .waterCycleText {
-  font-family: 'Bungee Inline', sans-serif;
-  font-size: 2.5vw;
+  font-family: 'Gabarito';
+  font-size: 1.5vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
   color: rgb(212, 236, 255);
-  text-align: center;
+  text-align: justify;
   text-shadow: 0 0.1vw 0.2vw rgb(38, 38, 38);
+  animation: cycleAnimation 2s ease-in-out infinite
 }
 
 .cycleAnimation {
-  background-color: #0077FF; /* Color del botón */
+  background-color: #000000; /* Color del botón */
   color: white;
   font-size: 1.5vw;
-  padding: 10px 20px;
+  padding: 1vh 2vw; /* Espaciado relativo al ancho y altura de la pantalla */
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: #0055CC; /* Color del botón al pasar el ratón */
+    background-color: #000000; /* Color del botón al pasar el ratón */
   }
 }
