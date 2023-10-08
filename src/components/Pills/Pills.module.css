@@ -1,0 +1,25 @@
+/* Estilos para el contenedor de las pills */
+.pillsContainer {
+    display: flex;
+    justify-content: space-between; /* Distribuye las pills de manera uniforme */
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  /* Estilos para las pills individuales */
+  .pill {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+    transition: background-color 0.2s ease;
+  }
+  
+  /* Estilos para una pill activa */
+  .pill.active {
+    background-color: #078ce5; /* Cambia el color de fondo cuando está activa */
+    color: #fff; /* Cambia el color del texto cuando está activa */
+  }
+  
