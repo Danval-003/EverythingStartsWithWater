@@ -57,12 +57,8 @@ const App = () => {
             texts={Languagues[indexLanguage].WorldSlide}
           />
           <IntroductionSlide
-            goNext={() => { setIndex(5); setPercentage(0.65) }}
-            texts={Languagues[indexLanguage].Slide2}
-          />
-          <SweetWaterSlide
             goNext={() => { setIndex(5); setPercentage(0.7) }}
-            texts={Languagues[indexLanguage].Slide3}
+            texts={Languagues[indexLanguage].Slide2}
           />
           <CycleWaterSlide
             goNext={() => { setIndex(0); setPercentage(1.0) }}
