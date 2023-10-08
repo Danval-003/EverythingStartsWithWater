@@ -33,7 +33,7 @@ const App = () => {
         zIndex: 3, position: 'absolute', bottom: 0, right: 0,
       }}
       >
-        <Pills options={['Español', 'English']} setSelectedIndex={(c) => setIndexLanguage(c)} />
+        <Pills options={['English', 'Español']} setSelectedIndex={(c) => setIndexLanguage(c)} />
       </div>
       <div style={{ zIndex: -1 }}>
         <InteractiveWater percentaje={percentage} />
