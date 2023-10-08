@@ -15,11 +15,29 @@
         "From the Occeans to the Rivers and Lakes, is essential for the survival for all forms of life",
         "Next"
     ],
-    "Slide4": [
-        "The Water Cycle in Action:",
-        "Water follows a constant cycle. It evaporates from the surface, forms clouds, falls as rain, and flows back to the oceans and rivers. It's an essential dance. 😯",
-        "Next"        
-    ],
+    "Slide4": {
+        "title": [    
+            "EVAPORATION",
+            "TRANSPIRATION",
+            "CONDENSATION",
+            "PRECIPITATION",
+            "SURFACE RUNOFF",
+            "GROUNDWATER"
+        ],
+        "text": [    
+            "The heat of the Sun causes water to evaporate from oceans, lakes, and streams. Evaporation occurs when liquid water on the surface of the Earth transforms into water vapor in our atmosphere.",  
+            "Water from plants and trees also enters the atmosphere. This is called transpiration.",        
+            "The warm water vapor rises through the Earth's atmosphere. As the water vapor ascends, the cool air in the atmosphere causes it to condense into liquid water, forming clouds.",     
+            "When a cloud becomes filled with liquid water, it falls from the sky mainly in the form of rain or snow: this is known as precipitation. Rain and snow fill lakes and streams, and the process begins anew.",        
+            "Surface runoff is simply water 'running' across the Earth's surface. Rain flows across the Earth's surface downhill due to gravity.",
+            "Some of the water infiltrates into the ground as soil moisture or groundwater."
+        ],
+        "info": [   
+            "The Water Cycle in Action:",
+            "Water follows a constant cycle. It evaporates from the surface, forms clouds, falls as rain, and flows back to the oceans and rivers. It's an essential dance. 😯",
+            "Next"
+        ]
+    }, 
     "WorldSlide": [
         "This is our world.",
         "Approximately 71% of the Earth's surface is covered by water. Of this percentage, the oceans contain approximately 96.5% of Earth's water, while the rest is found in rivers, lakes, glaciers, aquifers, and in the atmosphere.",
