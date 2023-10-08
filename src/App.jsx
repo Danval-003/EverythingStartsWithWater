@@ -4,7 +4,7 @@ import {
 } from './components'
 import './App.css'
 import {
-  IntroSlide, IntroductionSlide,
+  IntroSlide, IntroductionSlide, SweetWaterSlide
 } from './pages'
 import { Espanol } from '@text'
 
@@ -17,7 +17,8 @@ const App = () => {
       <InteractiveWater percentaje={percentage} />
       <Slider currentIndex={index}>
         <IntroSlide goNext={() => { setIndex(1); setPercentage(0.9) }} texts={Espanol.Slide1} />
-        <IntroductionSlide goNext={() => { setIndex(0); setPercentage(1.0) }} />
+        <IntroductionSlide goNext={() => { setIndex(2); setPercentage(1.0) }} />
+        <SweetWaterSlide goNext={() => { setIndex(0); setPercentage(1.0) }}/>
       </Slider>
     </div>
   )

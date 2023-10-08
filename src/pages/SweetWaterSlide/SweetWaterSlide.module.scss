@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'MiFuente'; /* Nombre de la fuente */
+    src: url('../../fonts/RAINYDAYS.ttf') format('truetype'); /* Ruta a la fuente TTF */
+    /* Otros estilos, como font-weight y font-style si es necesario */
+}
+
+@font-face {
+    font-family: 'Gabarito'; /* Nombre de la fuente */
+    src: url('../../fonts/Gabarito-VariableFont_wght.ttf') format('truetype'); /* Ruta a la fuente TTF */
+    /* Otros estilos, como font-weight y font-style si es necesario */
+}
+
+.principal {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-family: 'MiFuente', sans-serif; /* Usa la fuente en el cuerpo del documento */
+        font-size: 10vw;
+        margin: 10vw;
+        margin-top: 30vh;
+    }
+
+    p {
+        font-family: 'Gabarito'; /* Usa la fuente en el cuerpo del documento */
+        text-align: center;
+        font-size: 2vw; /* Ajusta el tamaño de la fuente según tus preferencias */
+    }
+    
+    .secondary {
+        font-family: 'Gabarito';
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 7vw;
+            margin: 1vw;
+            margin-top: 30vh;
+        }
+    }
+}
