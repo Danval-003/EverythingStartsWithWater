@@ -9,6 +9,8 @@ import {
 import Languagues from '@text'
 import texts from './texts'
 
+import Ima from './assets/desiertoIA.jpg'
+
 const App = () => {
   const [index, setIndex] = useState(0)
   const [percentage, setPercentage] = useState(1.0)
@@ -16,6 +18,13 @@ const App = () => {
 
   return (
     <div>
+
+      <img
+        src={Ima}
+        style={{
+          width: '100vw', height: '100vh', zIndex: -1, position: 'absolute', top: 0, left: 0,
+        }}
+      />
       <div style={{
         zIndex: 3, position: 'absolute', bottom: 0, right: 0,
       }}
