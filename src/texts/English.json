@@ -40,7 +40,12 @@
     }, 
     "WorldSlide": [
         "This is our world.",
-        "Approximately 71% of the Earth's surface is covered by water. Of this percentage, the oceans contain approximately 96.5% of Earth's water, while the rest is found in rivers, lakes, glaciers, aquifers, and in the atmosphere.",
+        "Approximately 71% of the Earth's surface is covered by water. Of this percentage, the oceans contain approximately 96.5% of Earth's water, while the rest is found in rivers, lakes, glaciers, aquifers, and in the atmosphere. But...",
+        "Next"
+    ],
+    "WorldSlide2": [
+        "What is valuable is scarce",
+        "Freshwater is a limited and valuable resource. According to the Aquae Foundation, 2.5% of the water on our planet is freshwater. Of this amount, only a small fraction is accessible for use. According to Lifeder, less than 1% of the available freshwater resources are suitable for human consumption. It is important to note that the amount of available freshwater varies depending on geographical location and climatic conditions. Therefore, there is no single answer to the question of how much of the planet's freshwater we can use.",
         "Next"
     ]
 }

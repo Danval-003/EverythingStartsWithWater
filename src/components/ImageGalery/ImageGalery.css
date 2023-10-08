@@ -7,9 +7,21 @@
   }
   
   .horizontal-image-list img {
-    max-width: 20%;
+    max-width: 100%;
   }
-  
+
+  .horizontal-image-list button{
+    background-color: rgba(0,0,0,0);
+    color: none;
+    border: none;
+  }
+
+  .horizontal-image-list button:focus,
+  button:focus-visible{
+    border: none;
+    outline: none;
+    outline-offset: none;
+  }
 
   
   .image-gallery {

@@ -1,13 +1,13 @@
 import { React } from 'react'
 import PropTypes from 'prop-types'
+import { RoundedButton } from '@components'
 import { principal } from './IntroSlide.module.scss'
+import { LinkButton } from '../../components'
 
 const IntroSlide = ({ goNext, texts }) => (
   <div className={principal}>
     <h1>{texts[0]}</h1>
-    <button onClick={goNext} type="button">
-      {texts[1]}
-    </button>
+    <RoundedButton onClick={goNext} text={texts[1]} />
   </div>
 )
 
