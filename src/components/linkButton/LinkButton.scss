@@ -1,0 +1,66 @@
+:root {
+    --prime: #00FF80;
+    --second: #0c1016;
+  }
+    
+  svg {
+    position: absolute;
+    top: -4000px;
+    left: -4000px;
+  }
+  
+  #gooey-button {
+    padding: 5vw; /* Tamaño del botón relativo al ancho de la pantalla */
+    font-size: 4vw; /* Tamaño del texto relativo al ancho de la pantalla */
+    border: none;
+    color: var(--second);
+    filter: url('#gooey');
+    position: relative;
+    background-color: var(--prime);
+    outline: none;
+  
+    .bubbles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+  
+      .bubble {
+        background-color: var(--prime);
+        border-radius: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        z-index: -1;
+  
+        @for $bubble from 1 through 10 {
+          @at-root {
+            @keyframes move-#{$bubble} {
+              0% {
+                transform: translate(0, 0);
+              }
+              99% {
+                transform: translate(0, calc(-5vw - 8vw * random())); /* Ajusta el tamaño relativo */
+              }
+              100% {
+                transform: translate(0, 0);
+                opacity: 0;
+              }
+            }
+          }
+          
+          &:nth-child(#{$bubble}) {
+            $size: 5vw; /* Tamaño de la burbuja relativo al ancho de la pantalla */
+            left: calc(10px + (90% * random())); /* Ajusta la posición relativa */
+            width: $size;
+            height: $size;
+            animation: move-#{$bubble} calc(3s + #{$bubble * 0.02}s) infinite;
+            animation-delay: #{$bubble * 0.2}s;
+          }
+        }
+      }
+    }
+  }
+  

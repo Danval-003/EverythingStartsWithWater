@@ -4,6 +4,7 @@ import CircularButton from './CircularButton'
 import RoundedButton from './RoundedButton'
 import StickerMaker from './StickerMaker'
 import Pills from './Pills'
+import LinkButton from './linkButton'
 
 export {
   InteractiveWater,
@@ -12,4 +13,5 @@ export {
   RoundedButton,
   StickerMaker,
   Pills,
+  LinkButton,
 }
