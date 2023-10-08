@@ -1,12 +1,13 @@
 import { useState, React } from 'react'
 import {
-  InteractiveWater, Slider, CircularButton, RoundedButton, Pills,
+  InteractiveWater, Slider, Pills,
 } from './components'
 import './App.css'
 import {
   IntroSlide, IntroductionSlide,
 } from './pages'
 import Languagues from '@text'
+import texts from './texts'
 
 const App = () => {
   const [index, setIndex] = useState(0)
@@ -27,7 +28,7 @@ const App = () => {
       <div style={{ zIndex: 1 }}>
         <Slider currentIndex={index}>
           <IntroSlide goNext={() => { setIndex(1); setPercentage(0.9) }} texts={Languagues[indexLanguage].Slide1} />
-          <IntroductionSlide goNext={() => { setIndex(0); setPercentage(1.0) }} />
+          <IntroductionSlide goNext={() => { setIndex(0); setPercentage(1.0) }} texts={Languagues[indexLanguage].Slide2} />
         </Slider>
       </div>
     </div>

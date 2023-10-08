@@ -3,15 +3,15 @@ import PropTypes from 'prop-types'
 import { principal, secondary } from './IntroductionSlide.module.scss'
 import { LinkButton } from '../../components'
 
-const IntroductionSlide = ({ goNext }) => (
+const IntroductionSlide = ({ goNext, texts }) => (
   <div className={principal}>
-    <h1>El Tesoro Azul de Nuestro Planeta: ¡Corre que el Tiempo se Agota!</h1>
+    <h1>{texts[0]}</h1>
+    <h2>{texts[1]}</h2>
     <p className={secondary}>
-      ¡Prepárense para un viaje urgente! El agua, el tesoro azul de nuestro planeta, es vital para la vida.
-      Pero, ¿sabías que el cambio climático está amenazando su disponibilidad?
+      {texts[2]}
     </p>
     <button onClick={goNext} type="button">
-      siguiente
+      {texts[3]}
     </button>
     <LinkButton />
   </div>
@@ -19,6 +19,7 @@ const IntroductionSlide = ({ goNext }) => (
 
 IntroductionSlide.propTypes = {
   goNext: PropTypes.func,
+  texts: PropTypes.arrayOf(PropTypes.string).isRequired,
 }
 
 IntroductionSlide.defaultProps = {

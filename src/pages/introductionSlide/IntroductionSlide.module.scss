@@ -17,9 +17,21 @@
     h1{
         font-family: 'MiFuente', sans-serif; /* Usa la fuente en el cuerpo del documento */
         text-align: center;
-        font-size: 2vw; /* Ajusta el tamaño de la fuente según tus preferencias */
+        font-size: 2.5vw; /* Ajusta el tamaño de la fuente según tus preferencias */
+        color: rgb(195, 0, 0);
+        margin-top: 20vh;
+        text-shadow: 0 0.1vw 0.2vw rgb(38, 38, 38);
     }
 
+    h2{
+        font-family: 'MiFuente', sans-serif; /* Usa la fuente en el cuerpo del documento */
+        text-align: center;
+        font-size: 3.4vw; /* Ajusta el tamaño de la fuente según tus preferencias */
+        color: rgb(195, 0, 0);
+        margin-top: 0vh;
+        text-shadow: 0 0.1vw 0.2vw rgb(38, 38, 38);
+    }
+    
 }
 
 .secondary {
