@@ -19,33 +19,12 @@ const App = () => {
   return (
     <div>
       <div style={{
-        zIndex: 3, position: 'absolute', top: 0, right: 0,
-      }}>
-        <AudioPlayer />
-      </div>
-      <img
-        src={Ima}
-        alt="Mundo sin agua, Desierto"
-        style={{
-          width: '100vw',
-          height: '100vh',
-          zIndex: -1,
-          position: 'absolute',
-          top: 0,
-          left: 0,
-        }}
-      />
-      <div style={{
         zIndex: 3, position: 'absolute', bottom: 0, right: 0,
       }}
       >
-        <Volume />
-        <Pills options={['English', 'Español']} setSelectedIndex={(c) => setIndexLanguage(c)} />
+        <Pills options={['English', 'Español', 'Français']} setSelectedIndex={(c) => setIndexLanguage(c)} />
       </div>
-      <div style={{ zIndex: -1 }}>
-        <InteractiveWater percentaje={percentage} />
-      </div>
-      <div style={{ zIndex: 1 }}>
+      <div style={{ zIndex: 1, position: 'absolute', top: 0, right: 0, }}>
         <Slider currentIndex={index}>
           <IntroSlide
             goNext={() => { setIndex(1); setPercentage(0.95) }}
@@ -83,13 +62,24 @@ const App = () => {
           />
           <HelpSlide
             goNext={() => { setIndex(0); setPercentage(1.0) }}
-            goReturn={() => { setIndex(6); setPercentage(0.0) }}
+            goReturn={() => { setIndex(6); setPercentage(0.0); setIsBad(true) }}
             texts={Languagues[indexLanguage].HelpSlide}
           />
         </Slider>
       </div>
+      <img
+        src={Ima}
+        alt="Mundo sin agua, Desierto"
+        style={{
+          width: '100vw',
+          height: '100vh',
+          zIndex: -1,
+          position: 'absolute',
+          top: 0,
+          left: 0,
+        }}
+      />
       <InteractiveWater percentaje={percentage} isBad={isBad} />
-
     </div>
   )
 }

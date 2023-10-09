@@ -1,0 +1,85 @@
+{
+    "Slide1":[
+    "Tout commence avec l'eau",
+    "Prêt pour l'aventure ?"
+    ],
+    "Slide2": [
+    "Le Trésor Bleu de Notre Planète :",
+    "Le Temps Presse !",
+    "La NASA surveille presque tous les aspects de ce cycle de l'eau, depuis les précipitations qui tombent des nuages, jusqu'aux eaux souterraines, en passant par l'infiltration de l'eau dans le sol, son déplacement vers les rivières et les lacs, son absorption par les plantes, son utilisation par les animaux, et son évaporation dans l'atmosphère.",
+    "Suivant",
+    "Retour"
+    ],
+    "Slide3": [
+    "L'Or Liquide",
+    "L'eau douce est essentielle à la vie sur Terre.",
+    "Des océans aux rivières et aux lacs, elle est indispensable à la survie de toutes les formes de vie.",
+    "Suivant",
+    "Retour"
+    ],
+    "Slide4": {
+    "title": [
+    "ÉVAPORATION",
+    "TRANSPIRATION",
+    "CONDENSATION",
+    "PRÉCIPITATION",
+    "ÉCOULEMENT DE SURFACE",
+    "EAUX SOUTERRAINES"
+    ],
+    "text": [
+    "La chaleur du Soleil fait évaporer l'eau des océans, des lacs et des rivières. L'évaporation se produit lorsque l'eau liquide à la surface de la Terre se transforme en vapeur d'eau dans notre atmosphère.",
+    "L'eau des plantes et des arbres entre également dans l'atmosphère, on appelle cela la transpiration.",
+    "La vapeur d'eau chaude monte dans l'atmosphère terrestre. À mesure que la vapeur d'eau monte, l'air frais dans l'atmosphère la fait condenser en eau liquide, formant ainsi des nuages.",
+    "Lorsqu'un nuage est rempli d'eau liquide, il tombe du ciel principalement sous forme de pluie ou de neige, ce que l'on appelle précipitation. La pluie et la neige remplissent les lacs et les rivières, et le processus recommence.",
+    "L'écoulement de surface n'est rien d'autre que l'eau qui 'coule' à la surface de la Terre. La pluie s'écoule en descente à la surface de la Terre en raison de la gravité.",
+    "Une partie de l'eau s'infiltre dans le sol sous forme d'humidité du sol ou d'eau souterraine."
+    ],
+    "info": [
+    "Le Cycle de l'Eau en Action :",
+    "L'eau suit un cycle constant. Elle s'évapore de la surface, forme des nuages, tombe sous forme de pluie et retourne aux océans et aux rivières. C'est une danse essentielle. 😯",
+    "Suivant",
+    "Retour"
+    ]
+    },
+    "WorldSlide": [
+    "Voici notre monde",
+    "Environ 71 % de la surface de la Terre est recouverte d'eau. De ce pourcentage, les océans contiennent environ 96,5 % de l'eau de la Terre, tandis que le reste se trouve dans les rivières, les lacs, les glaciers, les nappes phréatiques et dans l'atmosphère.",
+    "Suivant",
+    "Retour"
+    ],
+    "WorldSlide2": [
+    "Ce qui est précieux est rare",
+    "L'eau douce est une ressource limitée et précieuse. Selon la Fondation Aquae, seulement 2,5 % de l'eau sur notre planète est de l'eau douce. De cette quantité, seule une petite fraction est accessible pour une utilisation. Selon Lifeder, moins de 1 % des ressources en eau douce disponibles conviennent à la consommation humaine. Il est important de noter que la quantité d'eau douce disponible varie en fonction de la géographie et des conditions climatiques. Par conséquent, il n'y a pas de réponse unique à la question de la quantité d'eau douce de la planète que nous pouvons utiliser.",
+    "Suivant",
+    "Retour"
+    ],
+    "HelpSlide": [
+    "Sauvons l'eau douce et la planète !",
+    "Conseil 1 : Fermez le robinet",
+    "Saviez-vous que laisser le robinet ouvert pendant que vous vous brossez les dents peut gaspiller jusqu'à 20 litres d'eau par jour ?",
+    "Fermez le robinet !",
+    "Conseil 2 : Recueillez l'eau de pluie",
+    "Placez des barils pour recueillir l'eau de pluie et utilisez-la pour arroser vos plantes ou laver votre voiture.",
+    "Apprenez-en plus",
+    "Conseil 3 : Réduisez la durée de vos douches",
+    "Réduire la durée de vos douches peut économiser une quantité significative d'eau tout au long de l'année.",
+    "Essayez maintenant !",
+    "Conseil 4 : Réparez les fuites",
+    "Recherchez et réparez toute fuite d'eau dans votre maison, comme les robinets qui gouttent ou les tuyaux qui fuient. Les fuites peuvent gaspiller de grandes quantités d'eau au fil du temps.",
+    "Réparez les fuites !",
+    "Terminer",
+    "Retour"
+    ],
+    "PolutionSlide": [
+    "L'eau douce s'épuise !",
+    "Selon les sources officielles de la NASA, le changement climatique a plusieurs effets sur l'eau douce de la planète. Certains de ces effets sont :",
+    [
+    "L'augmentation de la température mondiale provoque la fonte des glaciers et des calottes glaciaires, ce qui réduit la disponibilité de l'eau douce stockée sous ces formes et perturbe le cycle hydrologique.",
+    "Le changement climatique affecte également les schémas de précipitations, ce qui peut entraîner des sécheresses et des inondations plus fréquentes et graves dans différentes régions. Ces événements extrêmes peuvent avoir de graves conséquences sur l'agriculture, la santé humaine et les écosystèmes.",
+    "Le changement climatique peut modifier la qualité de l'eau douce, car l'augmentation de la température favorise la croissance d'algues et de bactéries qui peuvent contaminer l'eau. De plus, l'élévation du niveau de la mer peut entraîner l'intrusion d'eau salée dans les aquifères côtiers et réduire l'approvisionnement en eau potable."
+    ],
+    "Suivant",
+    "Retour",
+    "Ressources"
+    ]
+    }
