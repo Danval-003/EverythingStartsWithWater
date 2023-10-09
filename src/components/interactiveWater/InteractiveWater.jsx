@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import React, { useEffect } from 'react'
 import './InteractiveWater.scss'
 import PropTypes from 'prop-types'

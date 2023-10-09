@@ -14,10 +14,6 @@ import {
   splitElements,
 } from './CycleWaterSlide.module.scss'
 
-// import evaporationImage from '../../assets/evaporation.png'
-// import condensationImage from '../../assets/condensation.png'
-// import precipitationImage from '../../assets/precipitation.png'
-// import runoffImage from '../../assets/runoff.png'
 import evaporationImage from '../../assets/evaporation.gif'
 import transpirationImage from '../../assets/transpiration.gif'
 import condensationImage from '../../assets/condensation.gif'

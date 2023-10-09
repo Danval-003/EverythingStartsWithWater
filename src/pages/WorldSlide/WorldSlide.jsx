@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { RoundedButton } from '../../components'
 import {
-  principal, secondary, smallVideoContainer, smallVideo, onWater, world,
+  principal, secondary, world,
 } from './WorldSlide.module.scss'
 
 import Earth from '../../assets/earth.gif'

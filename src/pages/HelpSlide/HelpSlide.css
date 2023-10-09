@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+
+@font-face {
+  font-family: 'Gabarito';
+  src: url('../../fonts/Gabarito-VariableFont_wght.ttf') format('truetype');
+}
+
+@keyframes cycleAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1vw);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.help-slide {
+  animation: cycleAnimation 2s ease-in-out infinite;
+  margin-top: 15vh;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;  
+  color: #fff;
+  padding: 2vh 0;
+  text-align: center;
+  border-radius: 2vw;
+}
+
+.title {
+  font-family: 'Bungee Inline', sans-serif;
+  font-size: 3.5vw;
+  margin: 0 auto 1.5vh auto;
+}
+
+.tip-container {
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  gap: 2vw;
+  margin-top: 2vh;
+  width: 80%;
+}
+
+.tip {
+  background-color: #fff;
+  color: #333;
+  padding: 1vw;
+  border-radius: 2vw;
+  box-shadow: 0 0.25vw 0.5vw rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, max-height 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  width: 60%;
+  height: auto;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  margin: 0 auto;
+}
+
+.tip:hover {
+  transform: scale(1.03);
+  background-color: #f7f7f7;
+}
+
+.tip.expanded {
+  max-height: 100%;
+}
+
+.tip-title {
+  font-family: 'Bungee Inline', sans-serif;
+  font-size: 1.2vw;
+  margin: 0 auto 1vh auto;
+  color: #333;
+}
+
+.tip-description {
+  font-family: 'Gabarito';
+  font-size: 1vw;
+  margin-bottom: 2vh;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.tip.expanded .tip-description {
+  max-height: 1000px; /* Cambiado el valor para permitir que se expanda completamente, ajusta según sea necesario */
+  opacity: 1;
+}
+
+
+.interactive-button {
+  font-family: 'Gabarito';
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 0.7vw 2vw;
+  font-size: 0.8vw;
+  border-radius: 1vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin: 0 auto;
+}
+
+.interactive-button:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+.interactive-button.hidden {
+  display: none;
+}
+
+.interactive-gif,
+.interactive-video {
+  background-size: cover;
+  background-position: center;
+  height: 0vw;
+  width: 10vw;
+  margin: 1.5vh auto;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.interactive-gif.visible,
+.interactive-video.visible {
+  opacity: 1;
+}
+
+.progress-bar {
+  height: 0.9375vw;
+  background-color: #ccc;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.progress-bar.visible {
+  transform: scaleX(1);
+}
+
+@media screen and (max-width: 48rem) {
+  .tip-container {
+    grid-template-columns: 1fr;
+  }
+
+  .tip {
+    width: 100%;
+  }
+}
+
+.cycleAnimation {
+  background-color: #00000000; /* Color del botón */
+  color: white;
+  font-size: 1.5vw;
+  margin-top: 2vh;
+  padding: 1vh 2vw; /* Espaciado relativo al ancho y altura de la pantalla */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: cycleAnimation 2s ease-in-out infinite;
+  &:hover {
+    background-color: #00000000; /* Color del botón al pasar el ratón */
+  }
+}

@@ -1,10 +1,10 @@
 import { useState, React } from 'react'
 import {
-  InteractiveWater, Slider, Pills, AudioPlayer
+  InteractiveWater, Slider, Pills, AudioPlayer, Volume,
 } from './components'
 import './App.css'
 import {
-  IntroSlide, IntroductionSlide, WorldSlide, CycleWaterSlide, SweetWaterSlide, WorldSlide2, PolutionSlide,
+  IntroSlide, IntroductionSlide, WorldSlide, CycleWaterSlide, SweetWaterSlide, WorldSlide2, PolutionSlide, HelpSlide,
 } from './pages'
 import Languagues from './texts'
 
@@ -39,6 +39,7 @@ const App = () => {
         zIndex: 3, position: 'absolute', bottom: 0, right: 0,
       }}
       >
+        <Volume />
         <Pills options={['English', 'Español']} setSelectedIndex={(c) => setIndexLanguage(c)} />
       </div>
       <div style={{ zIndex: -1 }}>
@@ -77,10 +78,14 @@ const App = () => {
           />
           <PolutionSlide
             goReturn={() => { setIndex(5); setPercentage(0.67); setIsBad(false) }}
-            goNext={() => { setIndex(0); setPercentage(1.0); setIsBad(false) }}
+            goNext={() => { setIndex(7); setPercentage(1.0); setIsBad(false) }}
             texts={Languagues[indexLanguage].PolutionSlide}
           />
-
+          <HelpSlide
+            goNext={() => { setIndex(0); setPercentage(1.0) }}
+            goReturn={() => { setIndex(6); setPercentage(0.0) }}
+            texts={Languagues[indexLanguage].HelpSlide}
+          />
         </Slider>
       </div>
       <InteractiveWater percentaje={percentage} isBad={isBad} />

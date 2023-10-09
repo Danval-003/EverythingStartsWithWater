@@ -26,33 +26,29 @@ const ImageGalery = () => {
 
   return (
     <div className="horizontal-image-list">
-      <button type="button">
+      <button type="button" onClick={handleClick1}>
         <img
           className={isHeads1 ? 'floating-animation' : ''}
           src={isHeads1 ? cascade : paisaje}
           alt="Coin"
-          onClick={handleClick1}
         />
       </button>
 
-      <button type="button">
+      <button type="button" onClick={handleClick2}>
         <img
           className={isHeads2 ? 'floating-animation' : ''}
           src={isHeads2 ? cascada : naturaleza}
           alt="Coin"
-          onClick={handleClick2}
         />
       </button>
 
-      <button type="button">
+      <button type="button" onClick={handleClick3}>
         <img
           className={isHeads3 ? 'floating-animation' : ''}
           src={isHeads3 ? rivers : ola}
           alt="Coin"
-          onClick={handleClick3}
         />
       </button>
-
     </div>
   )
 }

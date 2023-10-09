@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { principal } from './SweetWaterSlide.module.scss'
 import { RoundedButton, ImageGalery } from '../../components'
