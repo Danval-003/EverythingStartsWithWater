@@ -1,4 +1,4 @@
-import { useState, React, useEffect } from 'react'
+import { useState, React } from 'react'
 import {
   InteractiveWater, Slider, Pills,
 } from './components'
@@ -14,10 +14,6 @@ const App = () => {
   const [index, setIndex] = useState(0)
   const [percentage, setPercentage] = useState(0.99)
   const [indexLanguage, setIndexLanguage] = useState(0)
-
-  useEffect(() => {
-    console.log(Languagues[indexLanguage].HelpSlide)
-  }, [])
 
   return (
     <div>

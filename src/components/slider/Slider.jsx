@@ -52,6 +52,7 @@ const Slider = ({ children, currentIndex }) => {
               style={{
                 width: `${slideWidth}px`,
               }}
+              // eslint-disable-next-line react/no-array-index-key
               key={index}
             >
               {child}

@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { principal } from './SweetWaterSlide.module.scss'
 import { RoundedButton, ImageGalery } from '../../components'
 
-
-const SweetWaterSlide = ({ goNext, texts, goReturn}) => (
+const SweetWaterSlide = ({ goNext, texts, goReturn }) => (
   <div className={principal}>
 
     <h1>{texts[0]}</h1>

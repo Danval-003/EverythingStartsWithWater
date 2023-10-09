@@ -1,5 +1,6 @@
 import { React } from 'react'
 import PropTypes from 'prop-types'
+// eslint-disable-next-line import/no-unresolved
 import { RoundedButton } from '@components'
 import { principal } from './IntroSlide.module.scss'
 
