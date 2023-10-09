@@ -1,10 +1,10 @@
-import { useState, React } from 'react'
+import { useState, React, useEffect } from 'react'
 import {
   InteractiveWater, Slider, Pills,
 } from './components'
 import './App.css'
 import {
-  IntroSlide, IntroductionSlide, WorldSlide, CycleWaterSlide, SweetWaterSlide, WorldSlide2,
+  IntroSlide, IntroductionSlide, WorldSlide, CycleWaterSlide, SweetWaterSlide, WorldSlide2, HelpSlide,
 } from './pages'
 import Languagues from './texts'
 
@@ -14,6 +14,10 @@ const App = () => {
   const [index, setIndex] = useState(0)
   const [percentage, setPercentage] = useState(0.99)
   const [indexLanguage, setIndexLanguage] = useState(0)
+
+  useEffect(() => {
+    console.log(Languagues[indexLanguage].HelpSlide)
+  }, [])
 
   return (
     <div>
@@ -65,9 +69,14 @@ const App = () => {
             texts={Languagues[indexLanguage].Slide2}
           />
           <CycleWaterSlide
-            goNext={() => { setIndex(0); setPercentage(1.0) }}
             goReturn={() => { setIndex(4); setPercentage(0.67) }}
+            goNext={() => { setIndex(6); setPercentage(1) }}
             texts={Languagues[indexLanguage].Slide4}
+          />
+          <HelpSlide
+            goNext={() => { setIndex(0); setPercentage(1.0) }}
+            goReturn={() => { setIndex(5); setPercentage(0.67) }}
+            texts={Languagues[indexLanguage].HelpSlide}
           />
         </Slider>
       </div>

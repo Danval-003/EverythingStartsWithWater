@@ -4,6 +4,7 @@ import SweetWaterSlide from './SweetWaterSlide'
 import CycleWaterSlide from './cycleWaterSlide'
 import WorldSlide from './WorldSlide/WorldSlide'
 import WorldSlide2 from './WorldSlide2'
+import HelpSlide from './HelpSlide'
 
 export {
   IntroSlide,
@@ -12,4 +13,5 @@ export {
   CycleWaterSlide,
   WorldSlide,
   WorldSlide2,
+  HelpSlide,
 }
