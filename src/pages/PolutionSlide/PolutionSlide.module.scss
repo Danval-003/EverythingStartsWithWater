@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'MiFuente';
+    src: url('../../fonts/RAINYDAYS.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gabarito';
+    src: url('../../fonts/Gabarito-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NewTitle';
+    src: url('../../fonts/kids-Magazine.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+
+@keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Ajusta la distancia de levitación según tus preferencias */
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.hourglass{
+    position: relative;
+    top: -103.5vh;
+    left: 92vw;
+    filter: drop-shadow(0.1vw 0.1vw 0.1vw black);
+}
+
+.logoNasa{
+    
+    position: relative;
+    top: -123.5vh;
+    left: 1.4vw;
+    width: 13.4vw;
+}
+
+.logoNasa p{
+    font-family: 'Gabarito', sans-serif;
+    text-shadow: 0.1vw 0.1vw 0.1vw black;
+    color: rgb(226, 255, 4);
+    font-size: 1.8vw;
+    text-transform: uppercase;
+    line-height: 7vh;
+}
+
+.logoNasa a{
+    filter: drop-shadow(0.1vw 0.1vw 0.1vw black);
+    animation: floatAnimation 6s ease-in-out infinite;
+}
+
+.principal {
+    width: 100vw;
+    height: 100vh;
+}
+
+.onWater{
+    animation: floatAnimation 1.5s ease-in-out infinite alternate;
+}
+
+.world{
+    position: relative;
+    top: -70vh;
+    right: -50vw;
+    z-index: -2;
+}
+
+.principal h1 {
+    font-family: 'Bungee Inline', sans-serif;
+    text-align: right;
+    font-size: 4.5vw;
+    color: rgb(255, 0, 0);
+    margin-top: 17vh;
+    margin-left: 5vw;
+    margin-right: 10vw;
+    text-shadow: 0.1vw 0.1vw 0.2vw rgb(38, 38, 38);
+    line-height: 0vh;
+}
+
+.principal h2 {
+    font-family: 'Gabarito', sans-serif;
+    text-align: right;
+    font-size: 1.5vw;
+    color: rgb(239, 226, 226);
+    margin-top: -1vh;
+    margin-left: 20vw;
+    margin-right: 10vw;
+    text-shadow: 0.1vw 0.1vw 0.1vw rgb(38, 38, 38);
+}
+
+.principal ul{
+    background-color: rgba(0, 0, 0, 0.818);
+    padding: 3vw;
+    font-family: 'Gabarito', sans-serif;
+    text-align: justify;
+    font-size: 1.5vw;
+    border-bottom-left-radius: 5vw;
+    border-top-left-radius: 0.2vw;
+    color: rgb(238, 238, 238);
+    margin-top: -1vh;
+    margin-left: 15vw; 
+    margin-right: 0vw;   
+    text-shadow: 0.06vw 0.06vw 0.05vw rgb(47, 47, 47);
+}
+
+
+.secondary {
+    font-family: 'Gabarito';
+    font-size: 1.5vw;
+    margin-left: 17vw;
+    margin-right: 4vw;
+    margin-top: 11vw;
+    text-align: right;
+}
+
+.smallVideoContainer { 
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+
+}
+  
+.smallVideo {
+    width: 25vw;
+    border: 5px solid white;
+    height: auto;
+    margin-bottom: 1vw;
+}
+
+@media (max-width: 768px) {
+    .principal h1 {
+    font-size: 5.5vw;
+    color: rgb(212, 236, 255);
+    margin-top: 13vh;
+    margin-left: 3vw;
+    margin-right: 10vw;
+    text-shadow: 0 0.1vw 0.2vw rgb(38, 38, 38);
+    line-height: 6vh;
+    }
+
+    .principal h2 {
+    font-size: 7vw;
+    line-height: 6.6vh;
+    text-shadow: 0.1vw 0.1vw 0.1vw rgb(38, 38, 38);
+    }
+
+    .secondary {
+    font-family: 'Gabarito';
+    font-size: 3vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 19vh;
+    }
+    .smallVideo{
+        width: 40vw;
+        margin-bottom: 1vw;
+    }
+    .world{
+        height: 100vh;
+        left: 50vw;
+        top: -60vh;
+    }
+}
+
+
+  
+
+

@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center; /* Distribuye las pills de manera uniforme */
   align-items: center;
-  background-color: rgb(35, 127, 197);
+  background-color: rgba(15, 15, 15, 0.822);
   border-top-left-radius: 0.5vw;
   padding: 0.5vw;
 }
@@ -11,19 +11,21 @@
 /* Estilos para las pills individuales */
 .pill {
   padding: 0.4vw 0.6vw;
+  background-color: #141718;
   border-radius: 0; /* Redondea todos los lados de las pills */
   transition: background-color 0.2s ease;
+  font-size: 1.3vw;
 }
 
 /* Estilos para una pill activa */
 .pill.active {
-  background-color: #6ab1e1; /* Cambia el color de fondo cuando está activa */
+  background-color: rgb(59, 59, 59); /* Cambia el color de fondo cuando está activa */
   color: #fff; /* Cambia el color del texto cuando está activa */
 }
 
 .pill:not(.active):hover{
-  background-color: rgb(28, 150, 198);
-
+  background-color: rgb(174, 174, 174);
+  color: #262626;
 }
 
 /* Redondear el lado izquierdo del primer botón */

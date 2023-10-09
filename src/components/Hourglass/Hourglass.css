@@ -1,27 +1,24 @@
-
 :root {
 	--bg: #e3e4e8;
 	--fg: #2e3138;
 	--primary: #f42525;
-  --secondary: red;
-	font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
 }
 
 .hourglass, .hourglass:before, .hourglass:after {
-	animation-duration: 20s;
-	animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
 }
-
 .hourglass {
 	--polygonH: polygon(0% 0%,100% 0%,100% 5.55%,95% 5.55%,95% 28%,60% 46%,60% 54%,95% 72%,95% 94.45%,100% 94.45%,100% 100%,0% 100%,0% 94.45%,5% 94.45%,5% 72%,40% 54%,40% 46%,5% 28%,5% 5.55%,0% 5.55%);
-	background-image: linear-gradient(var(--primary) 0.5em,#737a8c55 0.5em 8.5em,var(--primary) 8.5em);
+	animation-name: flip;
+	animation-timing-function: ease-in-out;
+	background-image: linear-gradient(var(--primary) 1vh,#737a8c55 0.5vw 17vh,var(--primary) 17vh);
 	clip-path: var(--polygonH);
 	-webkit-clip-path: var(--polygonH);
 	overflow: hidden;
 	position: relative;
-	width: 5em;
-	height: 9em;
+	width: 5vw;
+	height: 18vh;
 	z-index: 0;
 }
 .hourglass:before, .hourglass:after {
@@ -38,46 +35,28 @@
 	--polygonB5: polygon(50% 53%,50% 53%,50% 53%,50% 53%,50% 53%,100% 76%,100% 100%,0% 100%,0% 76%,50% 53%,50% 53%,50% 53%);
 	animation-name: fill;
 	background-color: var(--fg);
-	background-size: 100% 3.6em;
+	background-size: 100% 3.6vw;
 	clip-path: var(--polygonB1);
 	-webkit-clip-path: var(--polygonB1);
-	top: 0.5em;
-	left: 0.5em;
-	width: 4em;
-	height: 8em;
+	top: 1.0vh;
+	left: 0.5vw;
+	width: 4vw;
+	height: 16vh;
 	z-index: 1;
 }
 .hourglass:after {
-	animation-name: glare, changeColor;
+	animation-name: glare;
 	background:
-		linear-gradient(90deg,#0000 0.5em,#0003 0.5em 1.5em,#0000 1.5em 3.5em,#fff3 3.5em 4.5em,#fff0 4.5em 6.5em,#0003 6.5em 7.5em,#0000 7.5em) 0 0 / 100% 0.5em,
-		linear-gradient(90deg,#0000 0.75em,#0003 0.75em 1.25em,#0000 1.25em 3.75em,#fff3 3.75em 4.25em,#fff0 4.25em 6.75em,#0003 6.75em 7.25em,#0000 7.25em) 0 0.5em / 100% 8em,
-		linear-gradient(90deg,#0000 0.5em,#0003 0.5em 1.5em,#0000 1.5em 3.5em,#fff3 3.5em 4.5em,#fff0 4.5em 6.5em,#0003 6.5em 7.5em,#0000 7.5em) 0 100% / 100% 0.5em;
+		linear-gradient(90deg,#0000 0.5vw,#0003 0.5vw 3vh,#0000 1.5vw 7vh,#fff3 3.5vw 9vh,#fff0 4.5vw 13vh,#0003 6.5vw 15vh,#0000 7.5vw) 0 0 / 100% 1vh,
+		linear-gradient(90deg,#0000 0.75vw,#0003 0.75vw 2.5vh,#0000 1.25vw 7.50vh,#fff3 3.75vw 8.5vh,#fff0 4.25vw 13.5vh,#0003 6.75vw 14.5vh,#0000 7.25vw) 0 1vh / 100% 16vw,
+		linear-gradient(90deg,#0000 0.5vw,#0003 0.5vw 3vh,#0000 1.5vw 7vh,#fff3 3.5vw 9vh,#fff0 4.5vw 13vh,#0003 6.5vw 15vh,#0000 7.5vw) 0 100% / 100% 1vh;
 	background-repeat: repeat-x;
 	top: 0;
-	left: -3em;
+	left: -3vw;
 	width: 200%;
 	height: 100%;
 	z-index: 2;
 }
-
-/* Define la nueva animación changeColor para cambiar el color a rojo */
-@keyframes changeColor {
-  to {
-    background-image: linear-gradient(var(--secondary) 0.5em,#737a8c55 0.5em 8.5em,var(red) 8.5em);
-  }
-}
-
-/* Añade la nueva animación 'fall' */
-@keyframes fall {
-  from {
-    top: 0; /* Comienza desde la parte superior */
-  }
-  to {
-    top: 100%; /* Termina en la parte inferior */
-  }
-}
-
 /* Animations */
 @keyframes fill {
 	from {
