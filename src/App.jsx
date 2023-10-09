@@ -1,6 +1,6 @@
 import { useState, React } from 'react'
 import {
-  InteractiveWater, Slider, Pills,
+  InteractiveWater, Slider, Pills, AudioPlayer
 } from './components'
 import './App.css'
 import {
@@ -18,6 +18,11 @@ const App = () => {
 
   return (
     <div>
+      <div style={{
+        zIndex: 3, position: 'absolute', top: 0, right: 0,
+      }}>
+        <AudioPlayer />
+      </div>
       <img
         src={Ima}
         alt="Mundo sin agua, Desierto"
