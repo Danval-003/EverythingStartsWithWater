@@ -5,6 +5,7 @@ import CycleWaterSlide from './cycleWaterSlide'
 import WorldSlide from './WorldSlide/WorldSlide'
 import WorldSlide2 from './WorldSlide2'
 import HelpSlide from './HelpSlide'
+import PolutionSlide from './PolutionSlide'
 
 export {
   IntroSlide,
@@ -14,4 +15,5 @@ export {
   WorldSlide,
   WorldSlide2,
   HelpSlide,
+  PolutionSlide,
 }

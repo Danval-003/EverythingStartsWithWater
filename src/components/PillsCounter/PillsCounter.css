@@ -1,0 +1,38 @@
+/* Estilos para el contenedor del slider */
+.custom-slider {
+    width: 300px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  /* Estilos para la pista del slider */
+  .slider-track {
+    height: 100%;
+    background-color: #078ce5;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Estilos para el control deslizante (thumb) */
+  .slider-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  /* Estilo activo cuando se arrastra el control deslizante */
+  .custom-slider.active .slider-thumb {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  

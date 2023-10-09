@@ -6,7 +6,7 @@
     "Slide2": [
         "Our Planet's Blue Treasure:",
         "Hurry, Time is Running Out!",
-        "Get ready for an urgent journey! Water, our planet's blue treasure, is vital for life. But, did you know that climate change is threatening its availability?",
+        "NASA tracks nearly every aspect of this water cycle—as precipitation falls from clouds; as groundwater; as water soaks into soil; as it moves into rivers and lakes; as it is taken up by plants, used by animals and evaporates back into the atmosphere.",
         "Next",
         "Return"
     ],
@@ -68,6 +68,17 @@
         "Fix the leaks!",
         "Next",
         "Return"
-    ]
-    
+    ],
+    "PolutionSlide": [
+        "Freshwater is running out!",
+        "According to official sources from NASA, climate change has several effects on the planet's freshwater. Some of these effects include:",
+        [
+        "Global temperature rise leads to the melting of glaciers and ice sheets, reducing the availability of freshwater stored in these forms and disrupting the hydrological cycle.",
+        "Climate change also affects precipitation patterns, which can result in more frequent and severe droughts and floods in different regions. These extreme events can have serious consequences for agriculture, human health, and ecosystems.",
+        "Climate change can alter the quality of freshwater, as higher temperatures favor the growth of algae and bacteria that can contaminate water. Additionally, rising sea levels can lead to the intrusion of saltwater into coastal aquifers and reduce the supply of drinking water."
+        ],
+        "Next",
+        "Back",
+        "Resources"
+        ]
 }

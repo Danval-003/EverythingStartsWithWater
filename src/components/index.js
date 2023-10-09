@@ -8,6 +8,7 @@ import LinkButton from './linkButton'
 import ImageGalery from './ImageGalery'
 import Hourglass from './Hourglass'
 import Volume from './Volume'
+import AudioPlayer from './AudioReproductor'
 
 export {
   InteractiveWater,
@@ -20,4 +21,5 @@ export {
   ImageGalery,
   Hourglass,
   Volume,
+  AudioPlayer,
 }

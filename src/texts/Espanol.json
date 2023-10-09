@@ -6,7 +6,7 @@
     "Slide2": [
         "El Tesoro Azul de Nuestro Planeta:",
         "¡Corre que el Tiempo se Agota!", 
-        "¡Prepárense para un viaje urgente! El agua, el tesoro azul de nuestro planeta, es vital para la vida. Pero, ¿sabías que el cambio climático está amenazando su disponibilidad?",
+        "La NASA rastrea casi todos los aspectos de este ciclo del agua, a medida que la precipitación cae de las nubes; como aguas subterráneas; a medida que el agua penetra en el suelo; a medida que se mueve hacia ríos y lagos; ya que es absorbido por las plantas, utilizado por los animales y se evapora de nuevo a la atmósfera.",
         "Siguiente",
         "Regresar"
     ],
@@ -69,5 +69,17 @@
         "¡Repara las fugas!",
         "Siguiente",
         "Regresar"
+    ],
+    "PolutionSlide": [
+        "¡El agua dulce se nos agota!",
+        "Según las fuentes oficiales de la NASA, el cambio climático tiene varios efectos sobre el agua dulce del planeta. Algunos de estos efectos son:",
+        [
+            "El aumento de la temperatura global provoca el derretimiento de los glaciares y las capas de hielo, lo que reduce la disponibilidad de agua dulce almacenada en estas formas y altera el ciclo hidrológico.",
+            "El cambio climático también afecta a los patrones de precipitación, lo que puede causar sequías e inundaciones más frecuentes y severas en diferentes regiones. Estos eventos extremos pueden tener graves consecuencias para la agricultura, la salud humana y los ecosistemas.",
+            "El cambio climático puede modificar la calidad del agua dulce, ya que el aumento de la temperatura favorece el crecimiento de algas y bacterias que pueden contaminar el agua. Además, el aumento del nivel del mar puede provocar la intrusión de agua salada en los acuíferos costeros y reducir el suministro de agua potable."
+        ],
+        "Siguiente",
+        "Regresar",
+        "Recursos"
     ]
 }
