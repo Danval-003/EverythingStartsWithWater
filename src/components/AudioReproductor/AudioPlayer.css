@@ -1,0 +1,9 @@
+.audio-container button{
+    background: rgba(45, 45, 45, 0.811);
+    border-radius: 1.2vw;
+}
+
+.audio-container{
+    margin-top: 0.6vw;
+    margin-right: 1vw;
+}

@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {
-  principal, secondary, smallVideoContainer, smallVideo,botonn
-} from './IntroductionSlide.module.scss'
 import { RoundedButton } from '@components'
+import {
+  principal, secondary, smallVideoContainer, smallVideo, botonn,
+} from './IntroductionSlide.module.scss'
 
 import videoNasa from '../../assets/introductionNasa.webm'
 
-const IntroductionSlide = ({ goNext, texts, goReturn}) => (
+const IntroductionSlide = ({ goNext, texts, goReturn }) => (
   <div className={principal}>
     <h1>{texts[0]}</h1>
     <h2>{texts[1]}</h2>
