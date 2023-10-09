@@ -1,6 +1,6 @@
 import { useState, React } from 'react'
 import {
-  InteractiveWater, Slider, Pills,
+  InteractiveWater, Slider, Pills, Volume,
 } from './components'
 import './App.css'
 import {
@@ -33,6 +33,7 @@ const App = () => {
         zIndex: 3, position: 'absolute', bottom: 0, right: 0,
       }}
       >
+        <Volume />
         <Pills options={['English', 'Español']} setSelectedIndex={(c) => setIndexLanguage(c)} />
       </div>
       <div style={{ zIndex: -1 }}>

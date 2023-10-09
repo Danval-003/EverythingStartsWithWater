@@ -7,6 +7,7 @@ import Pills from './Pills'
 import LinkButton from './linkButton'
 import ImageGalery from './ImageGalery'
 import Hourglass from './Hourglass'
+import Volume from './Volume'
 
 export {
   InteractiveWater,
@@ -18,4 +19,5 @@ export {
   LinkButton,
   ImageGalery,
   Hourglass,
+  Volume,
 }
