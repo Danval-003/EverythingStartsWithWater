@@ -4,6 +4,8 @@
 
 Welcome to the WaterCycle Visualizer project, a captivating ReactJS website that offers an immersive visual storytelling experience. Our mission is to tackle the critical challenge related to water resources by educating students about the water cycle and its profound implications for climate change. This project is designed to make learning about water engaging, informative, and impactful.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1692f012-12fd-4660-85e6-e89a9e92b0d8/deploy-status)](https://app.netlify.com/sites/jazzy-sorbet-c6b4ad/deploys)
+
 ## Project Overview
 
 - **Objective:** To help students comprehend the water cycle and its relationship with climate change.
